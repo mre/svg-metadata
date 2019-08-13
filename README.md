@@ -11,7 +11,7 @@ Currently it reads the following attributes:
 
 You can add more!
 
-## Example Usage
+## Usage Example
 
 ```rust
 use svg_metadata::{Metadata, ViewBox};
