@@ -60,10 +60,10 @@ impl From<XMLError> for MetadataError {
 
 #[derive(Debug, PartialEq)]
 pub struct ViewBox {
-    min_x: f32,
-    min_y: f32,
-    width: f32,
-    height: f32,
+    pub min_x: f32,
+    pub min_y: f32,
+    pub width: f32,
+    pub height: f32,
 }
 
 impl TryFrom<&str> for ViewBox {
@@ -93,7 +93,7 @@ impl TryFrom<&str> for ViewBox {
 
 #[derive(Debug, PartialEq)]
 pub struct Metadata {
-    view_box: Option<ViewBox>,
+    pub view_box: Option<ViewBox>,
 }
 
 impl Metadata {
