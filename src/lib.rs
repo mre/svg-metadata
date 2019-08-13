@@ -139,6 +139,7 @@ impl TryFrom<&str> for ViewBox {
 pub struct Metadata {
     pub view_box: Option<ViewBox>,
     pub width: Option<Width>,
+    pub height: Option<Height>,
 }
 
 impl Metadata {
@@ -156,15 +157,16 @@ impl Metadata {
             None => None,
         };
 
-        Ok(Metadata { view_box, width })
-    }
+        let height = match svg_elem.attribute("height") {
+            Some(val) => Height::try_from(val).ok(),
+            None => None,
+        };
 
-    pub fn view_box(self) -> Option<ViewBox> {
-        self.view_box
-    }
-
-    pub fn width(self) -> Option<Width> {
-        self.width
+        Ok(Metadata {
+            view_box,
+            width,
+            height,
+        })
     }
 }
 
@@ -285,7 +287,7 @@ mod tests {
 
         let meta = Metadata::parse(svg.to_string()).unwrap();
         assert_eq!(
-            meta.view_box(),
+            meta.view_box,
             Some(ViewBox {
                 min_x: 0.0,
                 min_y: 1.0,
@@ -294,10 +296,17 @@ mod tests {
             })
         );
         assert_eq!(
-            meta.width(),
+            meta.width,
             Some(Width {
                 width: 2.0,
                 unit: Unit::Em
+            })
+        );
+        assert_eq!(
+            meta.height,
+            Some(Height {
+                height: 10.0,
+                unit: Unit::Cm
             })
         )
     }
