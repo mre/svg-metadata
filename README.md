@@ -3,7 +3,7 @@
 ## What is it?
 
 This crate extracts metadata from SVG files.
-Currently, it reads the following attributes:
+Currently it reads the following attributes:
 
 * `viewBox`
 * `width`
