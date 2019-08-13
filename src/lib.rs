@@ -7,45 +7,45 @@ use std::io::Error as IoError;
 use std::num::ParseFloatError;
 
 #[derive(Debug)]
-pub struct SVGMetadataError {
+pub struct MetadataError {
     details: String,
 }
 
-impl SVGMetadataError {
-    fn new(msg: &str) -> SVGMetadataError {
-        SVGMetadataError {
+impl MetadataError {
+    fn new(msg: &str) -> MetadataError {
+        MetadataError {
             details: msg.to_string(),
         }
     }
 }
 
-impl fmt::Display for SVGMetadataError {
+impl fmt::Display for MetadataError {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         write!(f, "{}", self.details)
     }
 }
 
-impl Error for SVGMetadataError {
+impl Error for MetadataError {
     fn description(&self) -> &str {
         &self.details
     }
 }
 
-impl From<ParseFloatError> for SVGMetadataError {
-    fn from(_: ParseFloatError) -> SVGMetadataError {
-        SVGMetadataError::new("Cannot convert string to float")
+impl From<ParseFloatError> for MetadataError {
+    fn from(_: ParseFloatError) -> MetadataError {
+        MetadataError::new("Cannot convert string to float")
     }
 }
 
-impl From<IoError> for SVGMetadataError {
-    fn from(e: IoError) -> SVGMetadataError {
-        SVGMetadataError::new(e.description())
+impl From<IoError> for MetadataError {
+    fn from(e: IoError) -> MetadataError {
+        MetadataError::new(e.description())
     }
 }
 
-impl From<XMLError> for SVGMetadataError {
-    fn from(e: XMLError) -> SVGMetadataError {
-        SVGMetadataError::new(&e.to_string())
+impl From<XMLError> for MetadataError {
+    fn from(e: XMLError) -> MetadataError {
+        MetadataError::new(&e.to_string())
     }
 }
 
@@ -58,13 +58,13 @@ pub struct ViewBox {
 }
 
 impl TryFrom<&str> for ViewBox {
-    type Error = SVGMetadataError;
-    fn try_from(s: &str) -> Result<ViewBox, SVGMetadataError> {
+    type Error = MetadataError;
+    fn try_from(s: &str) -> Result<ViewBox, MetadataError> {
         let re = regex::Regex::new(r",?\s+").unwrap();
         let elem: Vec<&str> = re.split(s).collect();
 
         if elem.len() != 4 {
-            return Err(SVGMetadataError::new(&format!(
+            return Err(MetadataError::new(&format!(
                 "Invalid view_box: Expected four elements, got {}",
                 elem.len()
             )));
@@ -84,12 +84,12 @@ impl TryFrom<&str> for ViewBox {
 }
 
 #[derive(Debug, PartialEq)]
-pub struct SVGMetadata {
+pub struct Metadata {
     view_box: Option<ViewBox>,
 }
 
-impl SVGMetadata {
-    pub fn parse(input: String) -> Result<SVGMetadata, SVGMetadataError> {
+impl Metadata {
+    pub fn parse(input: String) -> Result<Metadata, MetadataError> {
         let doc = Document::parse(&input)?;
         let svg_elem = doc.root_element();
         let view_box = match svg_elem.attribute("viewBox") {
@@ -97,7 +97,7 @@ impl SVGMetadata {
             None => None,
         };
 
-        Ok(SVGMetadata { view_box })
+        Ok(Metadata { view_box })
     }
 
     pub fn view_box(self) -> Option<ViewBox> {
@@ -146,7 +146,7 @@ mod tests {
   <rect x="0" y="0" width="100%" height="100%"/>
 </svg>"#;
 
-        let meta = SVGMetadata::parse(svg.to_string()).unwrap();
+        let meta = Metadata::parse(svg.to_string()).unwrap();
         assert_eq!(
             meta.view_box(),
             Some(ViewBox {
