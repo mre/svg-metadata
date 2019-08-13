@@ -185,6 +185,43 @@ mod tests {
     }
 
     #[test]
+    fn test_width() {
+        let tests = vec![
+            (
+                "100em",
+                Width {
+                    width: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+            (
+                "100",
+                Width {
+                    width: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+            (
+                "-10.0px",
+                Width {
+                    width: -10.0,
+                    unit: Unit::Px,
+                },
+            ),
+            (
+                "100em",
+                Width {
+                    width: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+        ];
+        for (input, expected) in tests {
+            assert_eq!(Width::try_from(input).unwrap(), expected);
+        }
+    }
+
+    #[test]
     fn test_metadata() {
         // separated by whitespace and/or a comma
         let svg = r#"<svg viewBox="0 1 99 100" width="2em" height="10cm" xmlns="http://www.w3.org/2000/svg">
