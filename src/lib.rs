@@ -14,6 +14,7 @@ lazy_static! {
 }
 
 #[derive(Debug, PartialEq)]
+/// Specifies the dimensions of an SVG image.
 pub struct ViewBox {
     pub min_x: f32,
     pub min_y: f32,
@@ -47,11 +48,14 @@ impl TryFrom<&str> for ViewBox {
 }
 
 #[derive(Debug, PartialEq)]
+/// Contains all metadata that was
+/// extracted from an SVG image.
 pub struct Metadata {
     pub view_box: Option<ViewBox>,
 }
 
 impl Metadata {
+    /// Parse an SVG file and extract metadata from it.
     pub fn parse(input: String) -> Result<Metadata, MetadataError> {
         let doc = Document::parse(&input)?;
         let svg_elem = doc.root_element();
