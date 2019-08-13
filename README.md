@@ -3,7 +3,13 @@
 ## What is it?
 
 This crate extracts metadata from SVG files.
-Currently, it only reads the `viewBox` attribute, but you can add more!
+Currently, it reads the following attributes:
+
+* `viewBox`
+* `width`
+* `height`
+
+You can add more!
 
 ## Example Usage
 
