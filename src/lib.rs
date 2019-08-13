@@ -1,3 +1,6 @@
+#[macro_use]
+extern crate lazy_static;
+
 use roxmltree::Document;
 use roxmltree::Error as XMLError;
 use std::convert::TryFrom;
@@ -5,6 +8,12 @@ use std::error::Error;
 use std::fmt;
 use std::io::Error as IoError;
 use std::num::ParseFloatError;
+use regex::Regex;
+
+lazy_static! {
+    // Initialize the regex to split a list of elements in the viewBox
+    static ref VBOX_ELEMENTS: Regex = Regex::new(r",?\s+").unwrap();
+}
 
 #[derive(Debug)]
 pub struct MetadataError {
@@ -60,8 +69,7 @@ pub struct ViewBox {
 impl TryFrom<&str> for ViewBox {
     type Error = MetadataError;
     fn try_from(s: &str) -> Result<ViewBox, MetadataError> {
-        let re = regex::Regex::new(r",?\s+").unwrap();
-        let elem: Vec<&str> = re.split(s).collect();
+        let elem: Vec<&str> = VBOX_ELEMENTS.split(s).collect();
 
         if elem.len() != 4 {
             return Err(MetadataError::new(&format!(
