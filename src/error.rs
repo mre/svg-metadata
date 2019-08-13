@@ -1,8 +1,8 @@
 use roxmltree::Error as XMLError;
-use std::io::Error as IoError;
-use std::num::ParseFloatError;
 use std::error::Error;
 use std::fmt;
+use std::io::Error as IoError;
+use std::num::ParseFloatError;
 
 #[derive(Debug)]
 pub struct MetadataError {

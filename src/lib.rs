@@ -1,9 +1,9 @@
 #[macro_use]
 extern crate lazy_static;
 
+use regex::Regex;
 use roxmltree::Document;
 use std::convert::TryFrom;
-use regex::Regex;
 
 mod error;
 use crate::error::MetadataError;
@@ -11,15 +11,83 @@ use crate::error::MetadataError;
 lazy_static! {
     // Initialize the regex to split a list of elements in the viewBox
     static ref VBOX_ELEMENTS: Regex = Regex::new(r",?\s+").unwrap();
+
+    // Extract dimension information (e.g. 100em)
+    static ref DIMENSION: Regex = Regex::new(r"([\+|-]?\d+\.?\d*)(\D{2})?").unwrap();
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the dimensions of an SVG image.
 pub struct ViewBox {
-    pub min_x: f32,
-    pub min_y: f32,
-    pub width: f32,
-    pub height: f32,
+    pub min_x: f64,
+    pub min_y: f64,
+    pub width: f64,
+    pub height: f64,
+}
+
+#[derive(Debug, PartialEq, Copy, Clone)]
+/// Supported units for dimensions
+pub enum Unit {
+    /// The default font size - usually the height of a character.
+    Em,
+    /// The height of the character x
+    Ex,
+    /// Pixels
+    Px,
+    /// Points (1 / 72 of an inch)
+    Pt,
+    ///	Picas (1 / 6 of an inch)
+    Pc,
+    /// Centimeters
+    Cm,
+    /// Millimeters
+    Mm,
+    /// Inches
+    In,
+}
+
+impl TryFrom<&str> for Unit {
+    type Error = MetadataError;
+    fn try_from(s: &str) -> Result<Unit, MetadataError> {
+        let unit = match s.to_lowercase().as_ref() {
+            "em" => Unit::Em,
+            "ex" => Unit::Ex,
+            "px" => Unit::Px,
+            "pt" => Unit::Pt,
+            "pc" => Unit::Pc,
+            "cm" => Unit::Cm,
+            "mm" => Unit::Mm,
+            "in" => Unit::In,
+            _ => return Err(MetadataError::new(&format!("Unknown unit: {}", s))),
+        };
+        Ok(unit)
+    }
+}
+
+#[derive(Debug, PartialEq, Copy, Clone)]
+/// Specifies the width of an SVG image.
+pub struct Width {
+    pub width: f64,
+    pub unit: Unit,
+}
+
+impl TryFrom<&str> for Width {
+    type Error = MetadataError;
+    fn try_from(s: &str) -> Result<Width, MetadataError> {
+        let caps = DIMENSION
+            .captures(s)
+            .ok_or(MetadataError::new("Cannot read dimensions"))?;
+
+        let width: &str = caps
+            .get(1)
+            .ok_or(MetadataError::new("No width specified"))?
+            .as_str();
+        let unit = caps.get(2).map_or("em", |m| m.as_str());
+        Ok(Width {
+            width: width.parse::<f64>()?,
+            unit: Unit::try_from(unit)?,
+        })
+    }
 }
 
 impl TryFrom<&str> for ViewBox {
@@ -33,10 +101,10 @@ impl TryFrom<&str> for ViewBox {
                 elem.len()
             )));
         }
-        let min_x = elem[0].parse::<f32>()?;
-        let min_y = elem[1].parse::<f32>()?;
-        let width = elem[2].parse::<f32>()?;
-        let height = elem[3].parse::<f32>()?;
+        let min_x = elem[0].parse::<f64>()?;
+        let min_y = elem[1].parse::<f64>()?;
+        let width = elem[2].parse::<f64>()?;
+        let height = elem[3].parse::<f64>()?;
 
         Ok(ViewBox {
             min_x,
@@ -47,11 +115,12 @@ impl TryFrom<&str> for ViewBox {
     }
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Copy, Clone)]
 /// Contains all metadata that was
 /// extracted from an SVG image.
 pub struct Metadata {
     pub view_box: Option<ViewBox>,
+    pub width: Option<Width>,
 }
 
 impl Metadata {
@@ -64,11 +133,20 @@ impl Metadata {
             None => None,
         };
 
-        Ok(Metadata { view_box })
+        let width = match svg_elem.attribute("width") {
+            Some(val) => Width::try_from(val).ok(),
+            None => None,
+        };
+
+        Ok(Metadata { view_box, width })
     }
 
     pub fn view_box(self) -> Option<ViewBox> {
         self.view_box
+    }
+
+    pub fn width(self) -> Option<Width> {
+        self.width
     }
 }
 
@@ -109,7 +187,7 @@ mod tests {
     #[test]
     fn test_metadata() {
         // separated by whitespace and/or a comma
-        let svg = r#"<svg viewBox="0 1 99 100" xmlns="http://www.w3.org/2000/svg">
+        let svg = r#"<svg viewBox="0 1 99 100" width="2em" height="10cm" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="100%" height="100%"/>
 </svg>"#;
 
@@ -123,5 +201,12 @@ mod tests {
                 height: 100.0
             })
         );
+        assert_eq!(
+            meta.width(),
+            Some(Width {
+                width: 2.0,
+                unit: Unit::Em
+            })
+        )
     }
 }
