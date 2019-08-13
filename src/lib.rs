@@ -71,22 +71,40 @@ pub struct Width {
     pub unit: Unit,
 }
 
+fn parse_dimension(s: &str) -> Result<(f64, Unit), MetadataError> {
+    let caps = DIMENSION
+        .captures(s)
+        .ok_or(MetadataError::new("Cannot read dimensions"))?;
+
+    let width: &str = caps
+        .get(1)
+        .ok_or(MetadataError::new("No width specified"))?
+        .as_str();
+    let unit = caps.get(2).map_or("em", |m| m.as_str());
+
+    Ok((width.parse::<f64>()?, Unit::try_from(unit)?))
+}
+
 impl TryFrom<&str> for Width {
     type Error = MetadataError;
     fn try_from(s: &str) -> Result<Width, MetadataError> {
-        let caps = DIMENSION
-            .captures(s)
-            .ok_or(MetadataError::new("Cannot read dimensions"))?;
+        let (width, unit) = parse_dimension(s)?;
+        Ok(Width { width, unit })
+    }
+}
 
-        let width: &str = caps
-            .get(1)
-            .ok_or(MetadataError::new("No width specified"))?
-            .as_str();
-        let unit = caps.get(2).map_or("em", |m| m.as_str());
-        Ok(Width {
-            width: width.parse::<f64>()?,
-            unit: Unit::try_from(unit)?,
-        })
+#[derive(Debug, PartialEq, Copy, Clone)]
+/// Specifies the height of an SVG image.
+pub struct Height {
+    pub height: f64,
+    pub unit: Unit,
+}
+
+impl TryFrom<&str> for Height {
+    type Error = MetadataError;
+    fn try_from(s: &str) -> Result<Height, MetadataError> {
+        let (height, unit) = parse_dimension(s)?;
+        Ok(Height { height, unit })
     }
 }
 
@@ -218,6 +236,43 @@ mod tests {
         ];
         for (input, expected) in tests {
             assert_eq!(Width::try_from(input).unwrap(), expected);
+        }
+    }
+
+    #[test]
+    fn test_height() {
+        let tests = vec![
+            (
+                "100em",
+                Height {
+                    height: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+            (
+                "100",
+                Height {
+                    height: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+            (
+                "-10.0px",
+                Height {
+                    height: -10.0,
+                    unit: Unit::Px,
+                },
+            ),
+            (
+                "100em",
+                Height {
+                    height: 100.0,
+                    unit: Unit::Em,
+                },
+            ),
+        ];
+        for (input, expected) in tests {
+            assert_eq!(Height::try_from(input).unwrap(), expected);
         }
     }
 
