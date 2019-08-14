@@ -1,5 +1,7 @@
 # svg-metadata
 
+[![Documentation](https://docs.rs/svg_metadata/badge.svg)](https://docs.rs/svg_metadata/)
+
 ## What is it?
 
 This crate extracts metadata from SVG files.
