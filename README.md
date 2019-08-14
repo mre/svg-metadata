@@ -25,7 +25,7 @@ fn main() {
 
     let meta = Metadata::parse(svg.to_string()).unwrap();
     assert_eq!(
-        meta.view_box(),
+        meta.view_box,
         Some(ViewBox {
             min_x: 0.0,
             min_y: 1.0,
