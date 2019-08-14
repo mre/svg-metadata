@@ -3,6 +3,15 @@ name = "svg_metadata"
 version = "0.1.0"
 authors = ["Matthias Endler <matthias-endler@gmx.net>"]
 edition = "2018"
+description = "Extracts metadata like the viewBox from SVG graphics"
+license = "Apache-2.0/MIT"
+keyword = ["svg", "graphics", "image", "metadata" ]
+homepage = "https://github.com/mre/svg-metadata"
+categories = [
+    "graphics", 
+    "multimedia", 
+    "parsing"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
