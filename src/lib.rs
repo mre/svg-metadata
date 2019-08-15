@@ -1,3 +1,10 @@
+//! `svg_metadata` is a Rust crate for parsing metadata information of SVG files.  
+//! In can be useful for getting information from SVG graphics without using
+//! a full-blown parser.  
+//!
+//! As such, it has a very narrow scope and only provides access to the fields
+//! defined below.
+
 #[macro_use]
 extern crate lazy_static;
 

@@ -5,6 +5,8 @@ use std::io::Error as IoError;
 use std::num::ParseFloatError;
 
 #[derive(Debug)]
+/// The error type of the library, which gets
+/// returned on parsing issues.
 pub struct MetadataError {
     details: String,
 }
