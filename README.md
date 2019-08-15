@@ -1,6 +1,6 @@
 # svg-metadata
 
-![Github Actions](https://action-badges.now.sh/mre/svg-metadata)
+![Github Actions](https://action-badges.now.sh/mre/svg-metadata?action=test)
 [![Documentation](https://docs.rs/svg_metadata/badge.svg)](https://docs.rs/svg_metadata/)
 
 ## What is it?
