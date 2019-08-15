@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg3915" viewBox="0 0 153 153" version="1.1">
+  <g id="layer1" transform="translate(0 -899.36)">
+    <g id="g3882" transform="matrix(.99371 0 0 .99352 -468.96 705.98)">
+      <path id="path3823" d="m562.53 310c0 7.0761-5.7364 12.812-12.813 12.812-7.0761 0-12.812-5.7363-12.812-12.812 0-7.0761 5.7364-12.812 12.812-12.812 7.0762 0 12.813 5.7363 12.813 12.812z"/>
+      <path id="path3017" stroke="#000" d="m548.94 196.66c-41.424-0.002-75 33.58-75 75 0 40.767 32.532 73.898 72.875 74.938-19.98-0.99982-35.75-17.374-35.75-37.438 0-20.711 16.789-37.5 37.688-37.5 20.898 0 37.688-16.789 37.688-37.5s-16.785-37.498-37.5-37.5zm0 24.688c7.0737 0 12.812 5.7388 12.812 12.812 0 7.0737-5.7388 12.812-12.812 12.812-7.0737 0-12.812-5.7388-12.812-12.812 0-7.0737 5.7388-12.812 12.812-12.812z"/>
+      <path id="path3810" style="block-progression:tb;color:#000000;text-transform:none;text-indent:0" d="m548.94 196.18c-41.676 0-75.48 33.804-75.48 75.48s33.804 75.48 75.48 75.48 75.451-33.804 75.451-75.48-33.774-75.48-75.451-75.48zm0 0.95019c41.163 0 74.5 33.367 74.5 74.53s-33.338 74.53-74.5 74.53c-41.163 0-74.53-33.367-74.53-74.53s33.367-74.53 74.53-74.53z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Ying Yang</dc:title>
+        <dc:date>2010-11-27T16:43:56</dc:date>
+        <dc:description>balance, black and white, clip art, clipart, harmony, religion, sign, symbol, tao, taoism, yang, ying, </dc:description>
+        <dc:source>http://openclipart.org/detail/98437/ying-yang-by-manio1</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>manio1</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>balance</rdf:li>
+            <rdf:li>black and white</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>harmony</rdf:li>
+            <rdf:li>religion</rdf:li>
+            <rdf:li>sign</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>tao</rdf:li>
+            <rdf:li>taoism</rdf:li>
+            <rdf:li>yang</rdf:li>
+            <rdf:li>ying</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

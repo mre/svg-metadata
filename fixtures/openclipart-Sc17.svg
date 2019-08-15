@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg8761" viewBox="0 0 591.07 642.14" version="1.1">
+  <title id="title3370">Signalisation routi&#xE8;re</title>
+  <g id="layer1" transform="translate(-61.212 -47.038)">
+    <text id="text8780" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="40px" line-height="125%" y="688.68866" x="318.75705" font-family="Sans" fill="#000000">
+      <tspan id="tspan8782" y="688.68866" x="318.75705">Sc17</tspan>
+    </text>
+    <rect id="rect11228-1" ry="0" height="588.21" width="588.21" stroke="#000" y="48.472" x="62.645" stroke-width="2.8663" fill="#fff"/>
+    <rect id="rect14523-7" ry="0" height="557.9" width="557.9" y="63.624" x="77.797" fill="#00f"/>
+    <g id="g8655" stroke="#000" stroke-width="1px" fill="#fff" transform="translate(4.0217 .73729)">
+      <path id="path8121" d="m273.9 98.784-20.528 128.1h72.26v-128.1z"/>
+      <path id="path8123" d="m236.95 318.03-44.341 266.87h124.81l4.9268-267.69z"/>
+      <path id="path8125" d="m433.2 98.784 20.528 128.1h-72.26v-128.1z"/>
+      <path id="path8127" d="m470.15 318.03 44.341 266.87h-124.81l-4.9268-267.69z"/>
+      <path id="path8129" d="m106.39 258.9h492.68v35.309h-22.992c-6.569 0-26.558-0.53637-26.558 15.333v52.821h-35.027s-6.569-43.52-6.569-49.268c0-5.7479-9.0324-18.886-25.455-19.707-16.423-0.82113-247.16 0.12777-257.84 0-12.126-0.14516-25.455 7.4357-26.276 16.423-0.67658 7.4048-4.1056 52.552-4.1056 52.552h-37.772v-54.195c0-6.569-8.8873-14.536-17.92-14.536h-32.024z"/>
+    </g>
+    <g id="g11285" stroke="#fff" transform="matrix(1.8203 0 0 1.8203 389.07 -545.06)" fill="#fff">
+      <path id="path10753" d="m-302.69 426.28c-7.1429 0-58.929 1.7857-58.929 1.7857s-4.2857-5.7143-10.714-6.4286c-6.4286-0.71429-24.434-2.5396-26.934-2.5396s-8.7806 0.0396-10.566 0.0396c-1.7857 0-3.9682-4.1991-10.945-4.1991-5.7143 0-8.171 5.7935-8.171 10.436 0 4.6428 6.0498 9.2334 8.7284 9.2334s10.142 5.2508 14.423 11.14c4.2804 5.8893 7.1592 5.8893 11.322 5.8893 3.153 0 4.5166 0.24881 4.6428 3.9286 0.13052 3.8038-1.0102 5-2.4387 5-1.4286 0-2.5613 3.9286-2.5613 7.8571 0 3.9286 3.9286 13.929 10.714 13.929 6.7857 0 45.536-0.17857 45.536-0.17857s-0.89286-23.393 13.393-30.357c14.212-6.9286 20.311-4.9885 23.929-5.8929 1.4286-0.35713-1.4286-19.643-1.4286-19.643z"/>
+      <path id="path10755" transform="matrix(1.1346 0 0 1.1346 249.28 -74.213)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path10757" transform="matrix(.73077 0 0 .73077 3.3685 121.6)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path10759" transform="matrix(.41026 0 0 .41026 -191.8 277)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path11269" stroke-width="10" stroke-linecap="round" d="m-439.65 475.74s27.857-40.536 29.821-43.929"/>
+      <path id="path11271" stroke-width="5" d="m-403.58 421.99c0-6.6071 0.35714-11.429 17.857-14.821"/>
+      <path id="path11273" transform="matrix(1.1346 0 0 1.1346 384.01 -74.213)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path11275" transform="matrix(.73077 0 0 .73077 138.09 121.6)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path11277" transform="matrix(.41026 0 0 .41026 -57.078 277)" d="m-581.07 484.86c0 15.385-12.472 27.857-27.857 27.857s-27.857-12.472-27.857-27.857 12.472-27.857 27.857-27.857 27.857 12.472 27.857 27.857z"/>
+      <path id="path11279" stroke-width="8" d="m-271.73 477.73h-71.468"/>
+      <path id="path11283" stroke-width="5" d="m-306.18 477.62-16.189-37.017"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Sc17</dc:title>
+        <dc:date>2012-12-05T10:19:18</dc:date>
+        <dc:description>Road, Sign, France</dc:description>
+        <dc:source>http://openclipart.org/detail/173563/sc17-by-desmoric-173563</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Desmoric</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>France</rdf:li>
+            <rdf:li>Road</rdf:li>
+            <rdf:li>Sign</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

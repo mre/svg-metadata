@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 145.49 247.53" version="1.0">
+  <g id="layer1" transform="translate(-14.89 -15.361)">
+    <g id="g2794" stroke="#000" stroke-width="14.173" transform="translate(-245.71 -157.14)" fill="none">
+      <path id="path1306" d="m333.35 310.33v102.61"/>
+      <path id="path1308" d="m297.71 360.69h71.28"/>
+      <path id="path1310" stroke-linejoin="bevel" style="color:#000000" stroke-linecap="round" d="m399.01 245.25a65.66 65.66 0 1 1 -131.32 0 65.66 65.66 0 1 1 131.32 0z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>female symbol dan gerha 01r</dc:title>
+        <dc:date>2011-02-16T17:34:34</dc:date>
+        <dc:description>originally uploaded by Dan Gerhards for OCAL 0.18</dc:description>
+        <dc:source>http://openclipart.org/detail/118771/female-symbol-dan-gerha-01r-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>female</rdf:li>
+            <rdf:li>sign</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>venus</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

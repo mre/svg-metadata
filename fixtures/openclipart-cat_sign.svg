@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 744.09 1052.4" version="1.1">
+  <g id="layer1">
+    <g id="g3897" transform="matrix(2.0771 0 0 2.0771 -398.81 -701.25)">
+      <g id="g3894">
+        <rect id="rect2985" ry="39.013" height="431.5" width="353.75" stroke="#fff" y="375.18" x="194.25" stroke-width="8" fill="#00a"/>
+      </g>
+      <path id="path2987" d="m206.53 685.64h329.18" stroke="#fff" stroke-width="8.0355" fill="#fff"/>
+      <g id="text3757" fill="#fff">
+        <path id="path3888" d="m341.16 725.49c-2.4556-13.548-10.246-20.153-23.794-20.153-8.2981 0-14.987 2.6249-19.56 7.7054-5.5886 6.0966-8.6368 14.903-8.6368 24.894 0 10.161 3.133 18.883 8.9756 24.894 4.7418 4.9111 10.838 7.1974 18.883 7.1974 15.072 0 23.54-8.1288 25.403-24.471h-8.1288c-0.6774 4.2338-1.5242 7.1127-2.7943 9.5683-2.5402 5.0805-7.7901 7.9594-14.395 7.9594-12.278 0-20.068-9.8223-20.068-25.233 0-15.834 7.4514-25.572 19.391-25.572 4.9958 0 9.653 1.5242 12.193 3.895 2.2862 2.1169 3.5564 4.7418 4.4878 9.3143h8.0441"/>
+        <path id="path3890" d="m386.44 749.54 6.3506 18.544h8.8062l-21.677-61.728h-10.161l-22.016 61.728h8.3828l6.52-18.544h23.794m-2.2016-6.6047h-19.645l10.161-28.112 9.4836 28.112"/>
+        <path id="path3892" d="m432.84 713.3h20.237v-6.9434h-48.434v6.9434h20.322v54.785h7.8748v-54.785"/>
+      </g>
+      <path id="path1891" d="m338.13 614.75h76.638c0-10.894-0.77787-13.056-18.82-13.056 2.8824-8.6472 14.599-29.568 21.109-29.568 5.7601 0 12.632 0.31727 12.632 13.46 0 14.921 25.109 38.977 31.198 29.163 9.0735-14.626-15.599-10.166-15.599-45.44 0-48.257 28.163-41.387 28.163-68.499 0-13.564-3.7472-15.396-3.7472-25.094 0-12.817 11.291-12.073 9.0941-22.699-1.5175-7.3404-2.705-13.227-3.5897-22.104-0.62773-6.2982-0.82785-13.011-7.3698-12.741-7.6865 0.31714-10.602 13.847-22.55 14.817-11.923 0.96811-22.09-10.15-26.705-8.5624-4.5758 1.5747-3.1367 13.988-0.42388 22.805 4.2638 13.857 13.564 31.876-3.391 34.589-16.955 2.7128-46.118 5.4257-67.143 33.232-21.025 27.807-20.248 60.44-28.485 70.534-27.643 33.877-55.969 19.968-55.969 48.153 0 12.619 21.381 21.703 24.772 17.633 3.391-4.0693-28.814-16.195 7.2205-30.519 30.785-12.238 33.533-14.736 42.967-6.1039z" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Cat Restroom Sign</dc:title>
+        <dc:date>2013-09-06T02:28:24</dc:date>
+        <dc:description>restroom sign for cats</dc:description>
+        <dc:source>http://openclipart.org/detail/183101/cat-restroom-sign-by-matthewhenninger-183101</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>MatthewHenninger</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cat</rdf:li>
+            <rdf:li>restroom</rdf:li>
+            <rdf:li>sign</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

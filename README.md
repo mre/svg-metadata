@@ -35,3 +35,13 @@ fn main() {
     );
 }
 ```
+
+## Credits
+
+The SVG fixtures used for testing are provided by
+
+* [Openclipart](https://en.wikipedia.org/wiki/Openclipart)
+* [SVG Specification Examples](https://www.w3.org/TR/SVG2/)
+* [W3C SVG Working Group](https://www.w3.org/Graphics/SVG/)
+
+under their respective licenses.

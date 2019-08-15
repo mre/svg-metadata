@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg8761" viewBox="0 0 644.41 699.92" version="1.1">
+  <g id="layer1" transform="translate(-33.214 -71.697)">
+    <text id="text8780" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="40px" line-height="125%" y="771.61969" x="309.1806" font-family="Sans" fill="#000000">
+      <tspan id="tspan8782" y="771.61969" x="309.1806">B27a</tspan>
+    </text>
+    <path id="path8784" d="m400 568.79a322.14 322.14 0 1 1 -644.29 0 322.14 322.14 0 1 1 644.29 0z" transform="matrix(.99557 0 0 .99557 277.91 -172.37)" stroke="#000" stroke-width="3.0134" fill="#fff"/>
+    <path id="path8784-6" transform="matrix(.90230 0 0 .90230 285.17 -119.33)" fill="#00f" d="m400 568.79a322.14 322.14 0 1 1 -644.29 0 322.14 322.14 0 1 1 644.29 0z"/>
+    <g id="g6503" transform="matrix(1.3818 0 0 1.3818 670.77 -80.141)">
+      <path id="path10344" fill="#fff" d="m-393.67 295.52h4.4238l-9.8466 39.386s-8.705 1.5698-8.705 8.1342v35.676c0 5.7082 5.2801 9.6326 9.6326 9.6326s349.53 0.0113 349.53 0.0113v-105.25c0-4.7426-2.7245-8.2744-8.9808-8.2744s-336.05 0.28352-336.05 0.28352c0.0256 0.90816 0 20.397 0 20.397z"/>
+      <rect id="rect10328" ry="3.1312" height="41.099" width="69.354" y="293.81" x="-354.14" fill="#00f"/>
+      <rect id="rect10330" ry="3.1312" height="41.099" width="69.354" y="293.81" x="-277.65" fill="#00f"/>
+      <rect id="rect10332" ry="3.1312" height="41.099" width="69.354" y="293.81" x="-202.3" fill="#00f"/>
+      <rect id="rect10334" ry="3.1312" height="41.099" width="69.354" y="293.81" x="-125.81" fill="#00f"/>
+      <path id="path10336" d="m-618.57 490.22c0 18.146-14.711 32.857-32.857 32.857s-32.857-14.711-32.857-32.857 14.711-32.857 32.857-32.857 32.857 14.711 32.857 32.857z" transform="matrix(.79915 0 0 .79915 197.98 -10.755)" stroke="#00f" stroke-width="10" fill="#fff"/>
+      <path id="path10338" d="m-618.57 490.22c0 18.146-14.711 32.857-32.857 32.857s-32.857-14.711-32.857-32.857 14.711-32.857 32.857-32.857 32.857 14.711 32.857 32.857z" transform="matrix(.79915 0 0 .79915 382.36 -10.755)" stroke="#00f" stroke-width="10" fill="#fff"/>
+      <path id="path10346" fill="#00f" d="m-383.68 294.24-10.346 39.244h30.182c2.9968 0 2.8954-0.0406 2.8954-5.015v-31.232c0-2.8541-1.5697-3.0174-3.4456-3.0174-1.8758 0-19.286 0.0206-19.286 0.0206z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>B27a</dc:title>
+        <dc:date>2012-11-25T03:48:17</dc:date>
+        <dc:description>Road, Sign, France</dc:description>
+        <dc:source>http://openclipart.org/detail/173320/b27a-by-desmoric-173320</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Desmoric</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>France</rdf:li>
+            <rdf:li>Road</rdf:li>
+            <rdf:li>Sign</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

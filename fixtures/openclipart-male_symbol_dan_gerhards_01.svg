@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" height="6.2cm" sodipodi:version="0.32" width="6.4cm" sodipodi:docname="male.svg" sodipodi:docbase="/home/dan">
+  <sodipodi:namedview id="base" bordercolor="#666666" borderopacity="1.0" showborder="false" pagecolor="#ffffff"/>
+  <g id="layer1">
+    <g id="g2815" stroke="#000" stroke-width="14.173" transform="matrix(-.71138 -.70281 .70281 -.71138 299.47 699.06)" fill="none">
+      <path id="path2783" d="m547.5 318.06v90.18"/>
+      <path id="path2787" sodipodi:rx="65.659912" sodipodi:ry="65.659912" style="color:#000000" sodipodi:type="arc" d="m399.01 245.25a65.66 65.66 0 1 1 -131.32 0 65.66 65.66 0 1 1 131.32 0z" stroke-linejoin="bevel" transform="translate(214.15 8.5828)" sodipodi:cy="245.25031" stroke-linecap="round" sodipodi:cx="333.35034"/>
+      <path id="path2785" sodipodi:nodetypes="ccc" d="m503 358.99l44.5 53.83 44.5-53.83"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>male symbol dan gerhards 01</dc:title>
+        <dc:date>2011-02-16T17:34:38</dc:date>
+        <dc:description>originally uploaded by Dan Gerhards for OCAL 0.18</dc:description>
+        <dc:source>http://openclipart.org/detail/118843/male-symbol-dan-gerhards-01-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>male</rdf:li>
+            <rdf:li>mars</rdf:li>
+            <rdf:li>sign</rdf:li>
+            <rdf:li>symbol</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

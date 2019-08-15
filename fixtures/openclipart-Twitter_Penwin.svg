@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" style="enable-background:new" viewBox="0 0 168.18 243.92" version="1.1">
+  <title id="title3908">Twitter Penwin</title>
+  <defs id="defs4">
+    <filter id="filter3814" color-interpolation-filters="sRGB">
+      <feBlend id="feBlend3816" in2="BackgroundImage" mode="darken"/>
+    </filter>
+  </defs>
+  <g id="layer5" transform="translate(-9.2602 -29.403)">
+    <path id="path3765" d="m92.186 245.3c-4.968-6.1541-16.39 1.4408-23.019 5.7547-6.5394 4.2556-18.765 12.005-14.387 18.463 5.7906 8.5425 21.826-2 29.733-8.6321 4.4366-3.7213 11.31-11.08 7.673-15.586z" stroke="#a40" stroke-width="1.2102" fill="#f95"/>
+  </g>
+  <g id="layer2" transform="translate(-9.2602 -29.403)">
+    <path id="path3756" d="m41.992 126.34c-43.463-63.602 11.934-96.44 48.057-96.054 23.263 0.24808 69.673 33.586 49.264 86.561 0 0 25.514-19.823 28.145-17.294 18.298 17.585-24.076 72.228-24.076 72.228-2.4315 27.684 15.383 33.856 32.893 40.353-23.18 51.21-159.05 69.3-134.29-38.66-7.736-0.42-41.55-46.88-29.161-56.63 3.2149-2.53 29.163 9.4948 29.163 9.4948z" stroke="#214478" stroke-width="1.7322" fill="#3771c8"/>
+  </g>
+  <g id="layer3" transform="translate(-9.2602 -29.403)">
+    <path id="path3759" fill="#fff" d="m69.887 140.76c-64.915-18.94-27.039-123.93 8.872-41.487 43.851-76.866 92.841 17.777 22.781 41.247-0.8591 52.299 39.858 58.427 33.809 84.163-10.187 43.339-119.38 28.931-83.145-64.029 3.056-7.8406 7.97-13.52 17.685-19.894z"/>
+  </g>
+  <g id="layer11" transform="translate(-577.74 -54.259)" fill="#214478">
+    <path id="path2951" d="m610.17 201.28c0.4451-1.2512 1.0291-2.4326 1.3371-3.6722 6.4842-26.091 10.689-25.891 17.654-31.294-11.4 2.0276-17.414 18.643-19.467 31.911-0.21535 1.3912 0.68184 1.7078 0.47663 3.0542z"/>
+    <path id="path2953" d="m611.44 151.09c2.3673 3.7332 9.3762 11.356 17.703 15.239-5.7584-0.50908-16.383-11.396-20.562-16.639-0.42409-0.53209 3.1259 1.9259 2.8588 1.4004z"/>
+    <path id="path2955" d="m709.68 139.2c-9.1207 8.9604-18.262 17.896-26.136 28.414 7.585-8.4802 15.428-16.53 23.492-24.211l2.6436-4.2028z"/>
+    <path id="path2957" d="m712.68 196.93-14.087 14.567 12.469-15.226 1.6185 0.6594z"/>
+  </g>
+  <g id="layer4" transform="translate(-9.2602 -29.403)">
+    <path id="path3762" stroke-linejoin="round" d="m74.443 198.3c-8.1192 5.2951 1.3862 20.196 6.7138 28.294 4.929 7.4918 13.789 20.507 21.58 16.065 7.2617-4.1396 1.4728-17.659-2.6376-24.937-5.2747-9.3398-16.672-25.282-25.656-19.422z" stroke="#a40" stroke-width="1.2339" fill="#f95"/>
+  </g>
+  <g id="layer6" transform="translate(-9.2602 -29.403)">
+    <path id="path3772" d="m78.519 108.39c-2.4564-0.27807-15.028 7.408-14.866 10.071 0.2146 3.5367 12.191 12.9 15.825 12.708 3.1841-0.16808 13.015-6.889 13.188-10.311 0.2209-4.3596-11.382-12.156-14.147-12.469z" stroke="#a40" stroke-width="1.1153" fill="#f95"/>
+  </g>
+  <g id="layer8" transform="translate(-9.2602 -29.403)">
+    <path id="path3780" fill="#a02c2c" d="m70.633 121.19s4.8475 5.8283 7.263 6.004c2.4806 0.1805 8.429-5.3415 8.429-5.3415-5.4806 0.34152-10.845 0.42095-15.692-0.66252z"/>
+  </g>
+  <g id="layer9" transform="translate(-9.2602 -29.403)">
+    <path id="path3782" d="m63.556 118.33c5.2133 4.4216 16.842 5.2314 29.403 2.3079-4.8923-0.0879-17.208 3.6422-29.403-2.3079z" fill="#a40"/>
+    <path id="path3818" fill="#acf" d="m80.476 141.32c-5.3654 2.1341-11.977 5.5295-16.185 14.207 5.6351-1.4041 6.942-2.5196 10.37-3.7765-3.0367 3.3968-3.7405 6.5816-5.1553 9.831 1.7442-4.5955 5.749-9.7204 9.7111-12.409-5.0585 2.2031-9.0056 4.0233-13.068 5.0354 3.2856-6.6552 7.4479-8.6804 14.327-12.888z"/>
+  </g>
+  <g id="layer10" opacity=".45" filter="url(#filter3814)" transform="translate(-9.2602 -29.403)">
+    <path id="path3808" d="m78.356 108.23c2.1855-1.2099-2.274 13.447-1.9498 13.734 1.5978 1.41 3.5744 8.3063 1.9186 8.9506-1.6653 0.64791-6.9744-4.9628-9.4053-5.8575-4.7186-1.7367-5.2045-6.5943-5.066-7.0733 0.88564-3.0635 11.401-8.0363 14.503-9.7534z" fill="#d45500"/>
+  </g>
+  <g id="layer13" opacity=".20447" transform="translate(-577.74 -54.259)" fill="#fff">
+    <path id="path3793" d="m649.27 135.89c-1.5648 1.3826-2.4205 2.1621-1.9315 7.6331 0.13231 1.4803 9.6824 2.9554 11.03 1.1989 0.84433-1.1006-7.689-10.077-9.0984-8.832z"/>
+    <path id="path3827" opacity=".92332" d="m660.39 56.06c27.16 5.907 67.128 36.419 46.318 86.311l27.606-17.474c13.592 13.838-3.0809 41.582-22.381 70.533-5.232 17.98 4.5582 32.205 31.875 42.048-7.1418 11.109-5.9696 21.768-44.761 34.588-26.044-6.2762-22.018-60.129-58.387-104.4-54.86-66.77-27.49-103.08 19.72-111.61z" fill-opacity=".40468"/>
+  </g>
+  <g id="layer7" transform="translate(-9.2602 -29.403)">
+    <path id="path3775" d="m41.353 102.87c5.69-10.056 17.658-10.454 27.814-6.474-11.87-11.952-24.377-9.37-27.814 6.474z"/>
+    <path id="path3777" d="m90.748 98.554c8.8586-6.6266 18.397-5.441 28.534 2.6376-7.6757-15.02-18.574-15.094-28.534-2.6376z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Penguin | Ping&#xFC;ino</dc:title>
+        <dc:date>2011-09-09T07:02:49</dc:date>
+        <dc:description>A little penguin I drew to use in my website as a link to my twitter acount</dc:description>
+        <dc:source>http://openclipart.org/detail/159703/penguin--ping&#xFC;ino-by-maw</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Maw</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>antartic</rdf:li>
+            <rdf:li>antartico</rdf:li>
+            <rdf:li>azul</rdf:li>
+            <rdf:li>blue</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>little</rdf:li>
+            <rdf:li>mascota</rdf:li>
+            <rdf:li>penguin</rdf:li>
+            <rdf:li>peque&#xF1;o</rdf:li>
+            <rdf:li>pet</rdf:li>
+            <rdf:li>ping&#xFC;ino</rdf:li>
+            <rdf:li>pole</rdf:li>
+            <rdf:li>polo</rdf:li>
+            <rdf:li>south</rdf:li>
+            <rdf:li>sur</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

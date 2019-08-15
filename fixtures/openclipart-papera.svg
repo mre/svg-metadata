@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" id="Layer_1" style="enable-background:new 0 0 409.156 339.716" space="preserve" sodipodi:version="0.32" viewBox="0 0 409.156 339.716" version="1.1" sodipodi:docname="papera.svg" sodipodi:docbase="F:\openclip\svg da inviare">
+  <sodipodi:namedview id="base" bordercolor="#666666" borderopacity="1.0" pagecolor="#ffffff"/>
+  <path id="path3" fill-rule="evenodd" clip-rule="evenodd" d="m33.588 70.703c9.503-1.647 18.38-4.807 27.535-7.743 10.538-3.38 18.243-2.232 29.739-1.105-1.896 19.755 1.565 39.415-2.755 58.903-4.196 18.928-17.169 34.678-19.272 54.48-4.014 37.786 21.413 73.222 53.047 90.87 14.503 8.092 30.264 14.863 46.625 18.089 21.02 4.144 37.852-0.608 58.922-1.105 9.956-0.234 20.047 3.468 29.882 1.351 10.215-2.199 20.495-4.158 30.667-6.543 13.186-3.091 43.527-5.853 51.793-16.38-0.888-0.197-1.882-0.19-2.756-0.551 5.632-2.055 36.808-16.517 18.726-23.23 15.934-11.285 40.07-17.891 53.416-30.974-21.322-2.114-50.294 10.255-71.589 14.935 13.112-7.143 27.398-11.129 39.648-19.913-13.98 3.663-56.821 23.404-61.676 4.424 11.421-2.048 22.059-5.171 33.04-8.849-3.499-0.702-8.499-2.842-11.989-1.966-4.232 1.063-12.427 5.021-16.645 4.179-7.33-1.465-19.267-13.641-26.371-17.801-18.017-10.553-37.271-18.496-57.332-24.234-18.787-5.375-36.664-10.718-56.17-7.744-14.946 2.279-31.002 5.938-43.506-4.979-14.354-12.528-12.665-33.795-12.665-51.137 0-17.898 10.813-29.613 16.246-45.93 10.253-30.797-31.015-57.56-57.548-44.246-12.935 6.467-20.004 20.493-28.913 31.225-10.309 12.42-22.498 11.888-37.447 13.551-6.56 0.73-16.242 1.623-16.242 10.51 0 13.316 24.382 11.383 33.588 11.89"/>
+  <path id="path5" fill-rule="evenodd" clip-rule="evenodd" d="m215.32 272.58c1.325 5.712-3.708 11.103-2.468 16.084 1.763 7.081 5.144 17.08 1.917 24.293-7.031 15.721-31.695 10.945-45.158 13.826 5.158-0.149 9.227 3.376 10.467 8.297 10.898-10.287 7.508 1.123 13.768 3.871 5.188 2.277 10.832-1.349 17.069-0.552 10.445 1.334 8.302 2.246 17.622-0.554 5.889-1.769 13.836-2.664 19.272-5.53-7.177-2.582-14.07-6.423-21.475-7.745 8.105-19.753-0.854-36.911-3.307-57.521-2.27 1.96-5.82 3.75-7.71 5.52"/>
+  <path id="path7" fill-rule="evenodd" clip-rule="evenodd" d="m168.51 277.56c-0.016 10.557 9.24 30.222 0 39.27-5.629 5.513-16.014 2.213-23.403 2.213-10.767 0-21.507 2.84-32.215 3.872 5.504-0.227 10.818 2.479 11.565 8.296 4.308-1.77 23.688 2.2 22.301 3.595 6.441-6.479 17.918-3.357 25.606-8.02 6.694-4.059 10.997-11.797 10.38-19.87-0.465-6.094-2.945-13.041 1.775-17.781 3.619-3.634 7.789-7.309 9.324-12.126-3.418 0.259-6.364 1.086-9.691 2.09-9.078 2.738-2.814-0.325-6.831-3.197 0.198 0.142-2.735-10.104-7.712-4.979-1.68 1.74-1.74 4.45-1.1 6.65"/>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Architetto -- papera</dc:title>
+        <dc:date>2010-03-20T14:11:30</dc:date>
+        <dc:description>Drawing by Francesco 'Architetto' Rolandin. From OCAL 0.18 release.</dc:description>
+        <dc:source>http://openclipart.org/detail/32737/architetto----papera-by-anonymous</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Anonymous</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>animal</rdf:li>
+            <rdf:li>bird</rdf:li>
+            <rdf:li>black</rdf:li>
+            <rdf:li>black and white</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>duck</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

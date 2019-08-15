@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 26.309 18.274" version="1.0">
+  <defs id="defs4">
+    <linearGradient id="linearGradient53823" y2="769.53" gradientUnits="userSpaceOnUse" x2="200.59" gradientTransform="matrix(.46856 0 0 .46856 -1019.7 -538.01)" y1="820.86" x1="201.46">
+      <stop id="stop5130-8" stop-color="#eee" offset="0"/>
+      <stop id="stop9647-6" stop-color="#ddddde" offset=".17958"/>
+      <stop id="stop5132-0" stop-color="#cccccf" offset=".35917"/>
+      <stop id="stop5134-8" stop-color="#aaa" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient53825" y2="831.3" gradientUnits="userSpaceOnUse" x2="186.24" gradientTransform="matrix(.46856 0 0 .46856 -1019.7 -538.01)" y1="790.03" x1="184.45">
+      <stop id="stop6430-1" stop-color="#eee" offset="0"/>
+      <stop id="stop6432-4" stop-color="#333" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient53828" y2="271.86" gradientUnits="userSpaceOnUse" x2="-139.75" gradientTransform="matrix(.33753 0 0 .46856 -879.56 -298)" y1="313.36" x1="-140.25">
+      <stop id="stop5596-4-7-8-0-7-7" stop-color="#999" offset="0"/>
+      <stop id="stop5598-1-1-9-9-6-9" stop-color="#999" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient53830" y2="833.43" gradientUnits="userSpaceOnUse" x2="176.8" gradientTransform="matrix(.46856 0 0 .46856 -1019.7 -538.01)" y1="786.98" x1="173.45">
+      <stop id="stop5596-5-3" stop-color="#999" offset="0"/>
+      <stop id="stop5598-7-6" stop-color="#999" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer3" transform="translate(940.94 170.5)">
+    <g id="g53832">
+      <path id="path52979" stroke-linejoin="round" d="m-939.39-170.38h23.21c0.79348 0 1.4323 0.63879 1.4323 1.4323v15.175c0 0.79348-0.63879 1.4323-1.4323 1.4323h-23.21c-0.79347 0-1.4323-0.63879-1.4323-1.4323v-15.175c0-0.79348 0.63879-1.4323 1.4323-1.4323z" stroke="url(#linearGradient53830)" stroke-linecap="round" stroke-width=".23428" fill="url(#linearGradient53828)"/>
+      <path id="path52981" stroke-linejoin="round" d="m-938.43-169.27h21.204c0.71722 0 1.2946 0.5774 1.2946 1.2946v13.717c0 0.71723-0.57741 1.2946-1.2946 1.2946h-21.204c-0.71723 0-1.2946-0.5774-1.2946-1.2946v-13.717c0-0.71723 0.57741-1.2946 1.2946-1.2946z" stroke="url(#linearGradient53825)" stroke-linecap="round" stroke-width=".93712" fill="url(#linearGradient53823)"/>
+      <g id="g53795" stroke="#000" transform="translate(0 .30936)">
+        <path id="path52985" stroke-width=".020355" d="m-924.97-158.29c-0.20443-0.0662-0.2889-0.19626-0.35045-0.53972-0.0423-0.23616-0.0638-0.28875-0.22493-0.55116l-0.10427-0.16979c-0.20655-1.2057-0.59095-3.3823-1.8641-3.3866-1.2304-0.004-2.4261 2.7149-2.3697 4.5859-0.35228-0.39473-0.29687-1.162-0.31692-1.6759l-0.0779 0.19295-0.0779 0.19296 0.0159 0.34501c0.0251 0.54598 0.0142 0.66226-0.075 0.79645-0.0608 0.0915-0.20209 0.16312-0.29811 0.15117-0.20857-0.0259-0.38085-0.31954-0.47868-0.81575-0.0631-0.31988-0.0637-0.89589-0.001-1.252 0.0946-0.54018 0.17333-0.7382 0.62512-1.5712 0.15211-0.28046 0.29467-0.58702 0.47838-1.0288 0.14393-0.34607 0.32491-0.75957 0.40216-0.91887 0.14226-0.29335 0.31732-0.69453 0.40673-0.93206 0.0269-0.0716 0.0578-0.20798 0.0686-0.30316 0.0749-0.71606 0.30479-1.5441 0.78052-1.9873 0.39527-0.36825 0.89763-0.51967 1.3377-0.3516-0.0679 0.10917-0.41233 0.30953-0.72751 0.41716-1.3975 0.47725-1.1712 2.6383-0.31888 2.9092 0.18844 0.0599 0.37925-0.0688 0.75833-0.43155 0.20362-0.19482 0.32202-0.27945 0.39096-0.27947 0.0203 0 0.0269 0.0382 0.0269 0.15481 0 0.20632 0.027 0.28127 0.31446 0.87394 0.27829 0.57371 0.78962 1.4538 1.2611 2.1707 0.33134 0.50377 0.46939 0.75651 0.57105 1.0454 0.0905 0.25704 0.19274 0.65903 0.24145 0.94884 0.0525 0.31234 0.0734 0.8397 0.0407 1.0274-0.0568 0.32617-0.20538 0.45721-0.43438 0.38308zm-1.0571-3.4276c-0.64865-3.6254-3.8875-1.893-3.9204 1.8973 0.35914-1.911 1.349-3.253 2.3108-3.3516 0.6202-0.0636 1.2582 0.45459 1.6096 1.4544z"/>
+        <path id="path52987" stroke-width=".020355" d="m-927.8-165.24c-0.10543-0.0764-0.15619-0.14354-0.20297-0.26858-0.11566-0.30913-0.0456-0.77996 0.1693-1.1371 0.16464-0.27363 0.50693-0.5393 0.71152-0.50484 0.36349 0.0612 0.36735-0.0148 0.465-0.16344 0.0665 0.0405 0.13293 0.1044 0.1994 0.1566 0.10997 0.0503 0.29803-0.0177 0.42523-0.0602 0.19605-0.0781 0.45921-0.0492 0.58018 0.0638 0.11454 0.10695 0.12688 0.22953 0.0411 0.40779-0.0521 0.10819-0.13242 0.15645-0.36175 0.21737-0.2792 0.0742-0.45674 0.16495-0.53774 0.275-0.0369 0.0501-0.0787 0.0915-0.0928 0.0919-0.0406 0.001-0.1866 0.0802-0.27099 0.14662-0.0424 0.0333-0.18169 0.17822-0.30962 0.32195-0.28584 0.32115-0.39022 0.41852-0.50396 0.47012-0.12636 0.0573-0.21604 0.0525-0.31178-0.0169zm0.63536-1.7696c-0.0804 0.0139-0.11796 0.16298-0.076 0.23305 0.0493 0.0824 0.17554 0.0604 0.20386-0.0277 0.0269-0.0836-0.0327-0.22173-0.12786-0.20533z"/>
+        <path id="path52989" d="m-927.13-167.51c0.14497 0.0238 0.40266 0.13242 0.48597 0.22222m0.24433 1.1122c-0.0153 0.64908-0.4456 0.84733-0.59382 1.2961" stroke-width=".04" fill="none"/>
+        <path id="path52991" d="m-927.79-157.29c-0.46655 0.009-0.69563 0.33212-1.0778 0.33068-0.26841-0.001-0.41791-0.10882-0.60795-0.29021-1.2032-1.3952 0.40878-5.8193 2.0298-5.7119 2.1672 0.14357 2.3345 5.7642 0.66652 6.0241-0.38943 0.0394-0.72513-0.33942-1.0105-0.35269z" stroke-width=".04" fill="none"/>
+        <path id="path52993" stroke-width=".020355" d="m-929.38-156.39c0.20451-0.22876 0.29458-0.36545 0.29495-0.4476 0.0003-0.0657-0.0125-0.12619 0.0115-0.14512 0.15169 0.0601 0.29556 0.031 0.44768-0.00071-0.0391 0.29238 0.30201 0.5315 0.394 0.6217 0.39328 0.38562 0.44585 0.48534 0.31019 0.59205-0.0685 0.0539-0.13232 0.05-0.33146-0.0203-0.2313-0.0816-0.2854-0.079-0.40509 0.0199-0.13512 0.11165-0.25889 0.12655-0.49175 0.0592-0.0885-0.0256-0.0935 0.002-0.19975 0.0198-0.72519 0.12161-0.0938-0.62636-0.0303-0.69899z"/>
+        <path id="path52995" stroke-width=".020355" d="m-927.48-155.8c-0.40868-0.12962 0.30666-0.71842 0.3931-0.88347 0.0594-0.11974 0.005-0.31126 0.0397-0.2857 0.16658 0.0425 0.2854 0.0485 0.48668-0.0152 0.0219 0.0929-0.00032 0.21019 0.041 0.29484 0.13792 0.25725 0.55838 0.33759 0.60329 0.63464 0.0448 0.29629-0.35266 0.16336-0.51691 0.16592-0.12582 0.002-0.22609 0.1033-0.31428 0.10518-0.0947 0.002-0.17605-0.0957-0.27977-0.10207-0.15653-0.002-0.30743 0.12667-0.45279 0.0858z"/>
+      </g>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>The Linux Key</dc:title>
+        <dc:date>2013-04-18T18:04:42</dc:date>
+        <dc:description>A Linux keyboard key, much better and more secure than a Windows keyboard key! lol</dc:description>
+        <dc:source>http://openclipart.org/detail/177280/the-linux-key-by-merlin2525-177280</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Merlin2525</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>arch</rdf:li>
+            <rdf:li>clavier</rdf:li>
+            <rdf:li>cle</rdf:li>
+            <rdf:li>cl&#xC3;&#xA9;</rdf:li>
+            <rdf:li>computadora</rdf:li>
+            <rdf:li>computer</rdf:li>
+            <rdf:li>debian</rdf:li>
+            <rdf:li>dsl</rdf:li>
+            <rdf:li>electronic</rdf:li>
+            <rdf:li>electronica</rdf:li>
+            <rdf:li>electronico</rdf:li>
+            <rdf:li>electr&#xC3;&#xB3;nica</rdf:li>
+            <rdf:li>equipo</rdf:li>
+            <rdf:li>esmoquin</rdf:li>
+            <rdf:li>etiqueta</rdf:li>
+            <rdf:li>etiquette</rdf:li>
+            <rdf:li>fedora</rdf:li>
+            <rdf:li>hardware</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>icone</rdf:li>
+            <rdf:li>icono</rdf:li>
+            <rdf:li>ic&#xC3;&#xB4;ne</rdf:li>
+            <rdf:li>informacion</rdf:li>
+            <rdf:li>informaci&#xC3;&#xB3;n</rdf:li>
+            <rdf:li>information</rdf:li>
+            <rdf:li>informatique</rdf:li>
+            <rdf:li>it</rdf:li>
+            <rdf:li>key</rdf:li>
+            <rdf:li>keyboard</rdf:li>
+            <rdf:li>label</rdf:li>
+            <rdf:li>linux</rdf:li>
+            <rdf:li>mat&#xC3;&#xA9;riel</rdf:li>
+            <rdf:li>mint</rdf:li>
+            <rdf:li>ordenador</rdf:li>
+            <rdf:li>ordinateur</rdf:li>
+            <rdf:li>penguin</rdf:li>
+            <rdf:li>pingouin</rdf:li>
+            <rdf:li>pinguino</rdf:li>
+            <rdf:li>ping&#xC3;&#xBC;ino</rdf:li>
+            <rdf:li>smoking</rdf:li>
+            <rdf:li>super</rdf:li>
+            <rdf:li>superbe</rdf:li>
+            <rdf:li>techonology</rdf:li>
+            <rdf:li>tecla</rdf:li>
+            <rdf:li>teclado</rdf:li>
+            <rdf:li>tux</rdf:li>
+            <rdf:li>tuxedo</rdf:li>
+            <rdf:li>ubuntu</rdf:li>
+            <rdf:li>windows</rdf:li>
+            <rdf:li>&#xC3;&#xA9;lectronique</rdf:li>
+            <rdf:li>&#xC3;&#xA9;tiquette</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

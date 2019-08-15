@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 290.000000 206.000000" version="1.0">
+  <g transform="translate(0 206) scale(.1 -.1)">
+    <path d="m1563 1944c-51-25-64-43-79-107-3-15-32-53-63-85-50-50-131-158-131-175 0-3 10-7 22-9 41-6 85-123 88-233l1-40 19 53c50 139 124 191 210 147 37-19 61-54 94-137 23-59 26-80 26-188s-3-129-26-188c-33-83-57-118-94-137-108-56-201 48-235 260-7 44-13 69-14 56-1-36-49-111-70-111-43 0-75 66-96 195l-13 80-1-84-1-83-27 6c-16 3-89 9-163 12-109 5-163 2-280-14-232-34-319-65-498-180-82-54-152-166-152-247 0-45 34-129 71-176 65-83 223-171 379-212 281-74 562-73 847 3l102 27-6-28c-13-67 43-144 137-188 76-35 210-37 285-3 53 24 125 87 125 109 0 8 33-19 73-59 82-83 136-108 228-108 95 0 185 53 273 161 62 75 140 287 165 447 24 156 7 440-33 565-8 23-17 55-20 70-6 25-32 82-82 177-9 19-48 64-84 101-50 49-81 72-125 88-32 12-62 20-68 18-5-1 10-9 34-17 55-18 162-122 207-201 38-68 86-209 106-319 44-229-3-559-105-737-73-128-199-223-296-223-127 0-258 112-334 285-60 135-89 288-89 466 1 293 82 532 228 666 51 46 134 83 190 83l37 1-45 41c-148 134-326 189-520 160-62-9-66-9-91 14-32 30-42 30-106-2zm-1095-996c77-19 142-66 142-104s-11-53-59-87c-46-32-46-32-172-32-122 0-127 1-174 30-54 34-74 72-57 110l11 23 38-19c20-10 54-19 75-19 50 0 108 24 108 45 0 17-55 44-92 46-22 1-22 1 2 9 38 12 126 11 178-2zm1410-497c56-28 102-92 102-141s-46-112-102-142c-63-33-167-32-227 2-61 34-83 68-88 132-3 41 1 60 16 85 54 87 196 117 299 64z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Wuf</dc:title>
+        <dc:date>2012-07-13T00:41:54</dc:date>
+        <dc:description>This style is derived from a series of circles, each one adding to and cancelling out areas of the graphic, in alternation, creating elegant elliptical patterns.</dc:description>
+        <dc:source>http://openclipart.org/detail/171163/wuf-by-jgraves-171163</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>jgraves</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>2-color</rdf:li>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>confused</rdf:li>
+            <rdf:li>dog</rdf:li>
+            <rdf:li>doggie</rdf:li>
+            <rdf:li>perrito</rdf:li>
+            <rdf:li>perro</rdf:li>
+            <rdf:li>puppy</rdf:li>
+            <rdf:li>surprised</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg8761" viewBox="0 0 644.41 687.53" version="1.1">
+  <g id="layer1" transform="translate(-33.214 -71.697)">
+    <text id="text8780" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="40px" line-height="125%" y="758.76257" x="307.75204" font-family="Sans" fill="#000000">
+      <tspan id="tspan8782" y="758.76257" x="307.75204">B21c2</tspan>
+    </text>
+    <g id="g7171">
+      <path id="path8784" d="m400 568.79c0 177.91-144.23 322.14-322.14 322.14s-322.14-144.23-322.14-322.14 144.23-322.14 322.14-322.14 322.14 144.23 322.14 322.14z" transform="matrix(.99557 0 0 .99557 277.91 -172.37)" stroke="#000" stroke-width="3.0134" fill="#fff"/>
+      <path id="path8784-6" transform="matrix(.90230 0 0 .90230 285.17 -119.33)" fill="#00f" d="m400 568.79c0 177.91-144.23 322.14-322.14 322.14s-322.14-144.23-322.14-322.14 144.23-322.14 322.14-322.14 322.14 144.23 322.14 322.14z"/>
+      <g id="g12770" transform="matrix(-1 0 0 1 1472.9 -.072232)">
+        <path id="path12755" d="m1150.9 392.07 67.68-77.782 8.9651-10.102 9.4702-43.31-6.3135-6.1872-79.254-82.327 69.368 0.50508 104.99 110.42-105.64 109.29z" fill="#fff"/>
+        <path id="path12768" stroke="#fff" stroke-width="55" fill="none" d="m1028.6 588.08v-196.7c0-46.827 16.429-107.98 112.14-107.98h146.43"/>
+      </g>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>B21c2</dc:title>
+        <dc:date>2012-11-25T03:46:00</dc:date>
+        <dc:description>Road, Sign, France</dc:description>
+        <dc:source>http://openclipart.org/detail/173314/b21c2-by-desmoric-173314</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Desmoric</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>France</rdf:li>
+            <rdf:li>Road</rdf:li>
+            <rdf:li>Sign</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

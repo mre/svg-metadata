@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 48 48" version="1.0">
+  <g id="layer1">
+    <path id="path2383" stroke-width="1px" stroke="#000" fill-rule="evenodd" d="m0.80357 18.804l9.8504 0.051c0.03-7.73 26.433-7.142 26.337-0.051h10.17c-0.565-17.989-46.76-17.669-46.357 0z"/>
+    <path id="path3155" stroke-width="1px" stroke="#000" fill-rule="evenodd" d="m0.80237 20.446l9.7996 0.177v2.187l-9.7627-0.096-0.03693-2.268z"/>
+    <path id="path3157" stroke-width="1px" stroke="#000" fill-rule="evenodd" d="m37.036 20.446l10.205 0.09v2.428l-10.295-0.089 0.09-2.429z"/>
+    <path id="path3159" stroke-width="1px" stroke="#000" fill-rule="evenodd" d="m18.373 16.612h2.321v5.001l6.813 0.104v-4.896h2.246v5c3.831 3.57 6.965 7.898 8.535 16.148l-27.851-0.209c1.024-6.792 3.718-12.132 7.936-16.147v-5.001z"/>
+    <path id="path3161" stroke-width="1px" stroke="#000" fill-rule="evenodd" d="m10.362 39.497l28 0.208v3.438h-28v-3.646z"/>
+    <path id="path3163" transform="matrix(.55068 0 0 .64345 15.128 14.278)" fill="#fff" d="m26.875 24.75a10.75 10.625 0 1 1 -21.5 0 10.75 10.625 0 1 1 21.5 0z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>phone sign</dc:title>
+        <dc:date>2012-01-22T08:43:00</dc:date>
+        <dc:description>a symbol for calling numbers or as you will need it</dc:description>
+        <dc:source>http://openclipart.org/detail/167323/phone-sign-by-frankes</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>frankes</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>anrufen</rdf:li>
+            <rdf:li>calling</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>phone</rdf:li>
+            <rdf:li>telefon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

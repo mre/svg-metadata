@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg7362" viewBox="0 0 214.48 600" version="1.1">
+  <g id="layer1" transform="translate(-212.92 -13.302)">
+    <path id="path7062" d="m320.16 13.302c-23.811 0-43.025 19.429-43.025 43.239 0 23.811 19.215 43.025 43.025 43.025 23.811 0.000685 43.239-19.214 43.239-43.025s-19.429-43.239-43.239-43.239zm-67.214 110.24c-22.317 0-40.029 17.081-40.029 38.103v174.46c0 26.668 38.53 26.668 38.53 0v-137.85h13.7v393.01c0 12.028 10.778 22.047 23.546 22.047s22.476-10.021 22.476-22.047v-216.41h17.981v216.41c0 12.027 9.9218 22.047 22.69 22.047s23.546-10.019 23.546-22.047v-393.01h13.486v137.85c0 26.668 38.53 26.668 38.53 0v-174.46c0-21.022-17.712-38.103-40.029-38.103h-134.43z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Stickman</dc:title>
+        <dc:date>2011-07-24T12:19:18</dc:date>
+        <dc:description>The symbolic image of man that is used in signs</dc:description>
+        <dc:source>http://openclipart.org/detail/151435/stickman-by-rones</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>rones</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>black</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>man</rdf:li>
+            <rdf:li>sign</rdf:li>
+            <rdf:li>stickman</rdf:li>
+            <rdf:li>symbol</rdf:li>
+            <rdf:li>&#x447;&#x435;&#x43B;&#x43E;&#x432;&#x435;&#x447;&#x435;&#x43A;</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 328.47 690.8" version="1.1">
+  <g id="layer1" transform="translate(-207.03 -180.47)">
+    <g id="g3788" stroke="#000" fill="none">
+      <path id="path2985" stroke-width="2" d="m208.36 834.94c-3.7576-12.33 25.519-12.146 30.197-24.158 22.732-58.367-29.298-123.08-28.687-185.71 0.74207-76.118 13.492-153.34 39.256-224.97 15.487-43.057 36.122-77.805 46.805-122.3 5.0582-21.066 9.1896-42.165 18.118-61.904 6.6406-14.681 22.416-25.236 37.746-30.197 19.655-6.3612 43.168-5.6848 61.904 3.0197 18.085 8.4022 23.479 11.844 40.766 21.786 23.708 13.634 74.811 13.776 80.022 18.118 1.5098 13.589-74.656-9.1809-105.67 20.93-7.1441 6.5717-9.8641 11.803-8.3778 17.887 3.0778 36.54 45.919 66.603 54.354 126.83 4.5465 32.458 1.8603 82.936 1.8081 132.06-0.0523 49.124-13.551 113.49-19.398 145.74-9.2444 50.985-62.595 75.798-52.566 126.63 2.8251 14.319 18.649 23.677 31.707 30.197 8.2168 4.1026 26.459-4.6264 27.177 4.5295 0.62245 7.9332-14.957 5.5068-22.648 7.5492-7.4408 1.976-15.024 5.6036-22.648 4.5295-16.271-2.2926-30.423-32.211-43.786-22.648-8.2769 5.9236-2.2331 22.59 4.5295 30.197 3.8126 4.2886 17.471-1.1435 16.608 4.5295-4.2416 27.881-56.753 1.7319-84.551-3.0197-16.632-2.8428-31.755-11.862-48.315-15.098-17.843-3.4874-49.055 12.862-54.354-4.5295z"/>
+      <path id="path3006" stroke-width="2" d="m330.76 398.19s12.625 76.944 11.711 115.74c-1.2144 51.517-13.642 64.592-35.196 111.4-13.978 30.354-11.179 93.294-44.56 94.866-23.841 1.123-47.88-57.489-47.88-57.489"/>
+      <path id="path3008" d="m421.44 257.74s-5.7046 10.138-22.812 10.759c-12 0.43573-44.163-6.7861-44.163-6.7861"/>
+      <path id="path3783" d="m213.6 558.71c-11.809 17.274-31.506 30.171-37.189 42.897-2.8128 6.2985-5.9464 19.821-5.9464 19.821" stroke-width="1px" transform="translate(207.03 180.47)"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Stylized Penguin</dc:title>
+        <dc:date>2012-07-15T21:03:46</dc:date>
+        <dc:description>A stylized penguin, drawn in Inkscape.</dc:description>
+        <dc:source>http://openclipart.org/detail/171194/stylized-penguin-by-j_alves-171194</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>J_Alves</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>antarctic</rdf:li>
+            <rdf:li>aquatic</rdf:li>
+            <rdf:li>bird</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>marine</rdf:li>
+            <rdf:li>ocean</rdf:li>
+            <rdf:li>penguin</rdf:li>
+            <rdf:li>polar</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

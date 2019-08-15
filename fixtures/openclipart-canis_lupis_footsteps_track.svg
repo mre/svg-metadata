@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg3125" fill-rule="evenodd" viewBox="0 0 13403.267 17121.12" version="1.1">
+  <g id="Default" transform="translate(-4115.3 -5381.9)">
+    <desc id="desc3128">Master slide</desc>
+  </g>
+  <path id="path3225" fill-rule="nonzero" transform="translate(-4275.3 -5381.9)" d="m10880 10820a1760 3040 0 1 1 -3520 0 1760 3040 0 1 1 3520 0z"/>
+  <path id="path3995" fill-rule="nonzero" transform="translate(-495.3 -5271.9)" d="m10880 10820a1760 3040 0 1 1 -3520 0 1760 3040 0 1 1 3520 0z"/>
+  <path id="path3997" fill-rule="nonzero" transform="matrix(.73642 -.34496 .34496 .73642 -8523.9 4151.1)" d="m10880 10820a1760 3040 0 1 1 -3520 0 1760 3040 0 1 1 3520 0z"/>
+  <path id="path3999" fill-rule="nonzero" transform="matrix(-.76816 -.35983 -.35983 .76816 22424 3968.3)" d="m10880 10820a1760 3040 0 1 1 -3520 0 1760 3040 0 1 1 3520 0z"/>
+  <path id="path4007" fill-rule="nonzero" d="m6684.7 9508.1c-743.85 0-1494.5 251.73-1684.8 825.53s-340.68 1275.9-827.19 1762.4c-486.51 486.51-821.05 453.11-1463.7 670.55s-1324.3 1063.4-1324.3 2091.5 1200.2 2192.7 1806.8 2192.7c606.58 0 1023.3-33.413 1220-222.68 196.71-189.26 1188.5-970 2123.2-970s1984.6 1030.3 2262.5 1170.8c277.83 140.47 768.71 83.54 1264.8 65.862 496.11-17.678 1647.7-1127 1647.7-2086.6 0-959.63-354.46-1702-917.16-1945.3s-1022.5-93.345-1545.8-616.7c-523.36-523.36-558.82-1678.9-867.88-2112.1-309.06-433.26-950.29-825.82-1694.1-825.82z"/>
+  <path id="path4153" fill-rule="nonzero" d="m4458.4 2600s388.91-2669.3 371.23-2598.6c-17.7 70.691 512.6 2793.1 512.6 2793.1z"/>
+  <path id="path4155" fill-rule="nonzero" d="m8365.1 2776.8s388.91-2669.3 371.23-2598.6c-17.678 70.711 512.65 2793.1 512.65 2793.1z"/>
+  <path id="path4157" fill-rule="nonzero" d="m1117.3 6842.6c-592.49-941.92-423.43-1736.1-406.59-2368.8-948.74 219.19-853.35 3167-265.17 3341.1z"/>
+  <path id="path4159" fill-rule="nonzero" d="m12286 6842.6c592.49-941.92 423.43-1736.1 406.59-2368.8 948.74 219.19 853.35 3167 265.16 3341.1z"/>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Dog or wolf footstep/track</dc:title>
+        <dc:date>2012-06-03T13:13:24</dc:date>
+        <dc:description>Ideal for creating cat-dog peace treaty logos</dc:description>
+        <dc:source>http://openclipart.org/detail/170367/dog-or-wolf-footsteptrack-by-qubodup-170367</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>qubodup</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>animal</rdf:li>
+            <rdf:li>canis lupis</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>feet</rdf:li>
+            <rdf:li>foot</rdf:li>
+            <rdf:li>footstep</rdf:li>
+            <rdf:li>hunt</rdf:li>
+            <rdf:li>steps</rdf:li>
+            <rdf:li>track</rdf:li>
+            <rdf:li>tracks</rdf:li>
+            <rdf:li>wolf</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
