@@ -12,8 +12,7 @@ fn test_fixtures() {
         let path = path.unwrap().path();
         println!("Parsing {}", path.display());
 
-        let svg = fs::read_to_string(path).unwrap();
-        let meta = Metadata::parse(svg).unwrap();
+        let meta = Metadata::parse_file(path).unwrap();
         println!("Metadata: {:?}", meta);
     }
 }

@@ -11,6 +11,8 @@ extern crate lazy_static;
 use regex::Regex;
 use roxmltree::Document;
 use std::convert::{AsRef, TryFrom};
+use std::fs;
+use std::path::PathBuf;
 
 mod error;
 use crate::error::MetadataError;
@@ -151,6 +153,12 @@ pub struct Metadata {
 
 impl Metadata {
     /// Parse an SVG file and extract metadata from it.
+    pub fn parse_file<T: Into<PathBuf>>(path: T) -> Result<Metadata, MetadataError> {
+        let input = fs::read_to_string(path.into())?;
+        Self::parse(input)
+    }
+
+    /// Parse SVG data and extract metadata from it.
     pub fn parse<T: AsRef<str>>(input: T) -> Result<Metadata, MetadataError> {
         let doc = Document::parse(input.as_ref())?;
         let svg_elem = doc.root_element();

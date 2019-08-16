@@ -37,6 +37,8 @@ fn main() {
 }
 ```
 
+(You can also parse files directly with `parse_file()`.)
+
 ## Credits
 
 The SVG fixtures used for testing are provided by
