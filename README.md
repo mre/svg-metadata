@@ -24,7 +24,7 @@ fn main() {
     <rect x="0" y="0" width="100%" height="100%"/>
     </svg>"#;
 
-    let meta = Metadata::parse(svg.to_string()).unwrap();
+    let meta = Metadata::parse(svg).unwrap();
     assert_eq!(
         meta.view_box,
         Some(ViewBox {

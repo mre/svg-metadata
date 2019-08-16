@@ -10,7 +10,7 @@ extern crate lazy_static;
 
 use regex::Regex;
 use roxmltree::Document;
-use std::convert::TryFrom;
+use std::convert::{AsRef, TryFrom};
 
 mod error;
 use crate::error::MetadataError;
@@ -151,8 +151,8 @@ pub struct Metadata {
 
 impl Metadata {
     /// Parse an SVG file and extract metadata from it.
-    pub fn parse(input: String) -> Result<Metadata, MetadataError> {
-        let doc = Document::parse(&input)?;
+    pub fn parse<T: AsRef<str>>(input: T) -> Result<Metadata, MetadataError> {
+        let doc = Document::parse(input.as_ref())?;
         let svg_elem = doc.root_element();
         let view_box = match svg_elem.attribute("viewBox") {
             Some(val) => ViewBox::try_from(val).ok(),
@@ -292,7 +292,7 @@ mod tests {
   <rect x="0" y="0" width="100%" height="100%"/>
 </svg>"#;
 
-        let meta = Metadata::parse(svg.to_string()).unwrap();
+        let meta = Metadata::parse(svg).unwrap();
         assert_eq!(
             meta.view_box,
             Some(ViewBox {
