@@ -183,6 +183,16 @@ impl Metadata {
             height,
         })
     }
+
+    /// Returns the value of the `width` attribute.
+    pub fn width(&self) -> Option<Width> {
+        self.width
+    }
+
+    /// Returns the value of the `height` attribute.
+    pub fn height(&self) -> Option<Width> {
+        self.width
+    }
 }
 
 #[cfg(test)]
