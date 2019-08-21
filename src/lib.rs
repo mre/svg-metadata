@@ -190,8 +190,8 @@ impl Metadata {
     }
 
     /// Returns the value of the `height` attribute.
-    pub fn height(&self) -> Option<Width> {
-        self.width
+    pub fn height(&self) -> Option<Height> {
+        self.height
     }
 }
 
