@@ -22,7 +22,7 @@ lazy_static! {
     static ref VBOX_ELEMENTS: Regex = Regex::new(r",?\s+").unwrap();
 
     // Extract dimension information (e.g. 100em)
-    static ref DIMENSION: Regex = Regex::new(r"([\+|-]?\d+\.?\d*)(\D{2})?").unwrap();
+    static ref DIMENSION: Regex = Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap();
 }
 
 #[derive(Debug, PartialEq, Copy, Clone)]
@@ -53,6 +53,8 @@ pub enum Unit {
     Mm,
     /// Inches
     In,
+    /// Percent
+    Percent,
 }
 
 impl TryFrom<&str> for Unit {
@@ -67,6 +69,7 @@ impl TryFrom<&str> for Unit {
             "cm" => Unit::Cm,
             "mm" => Unit::Mm,
             "in" => Unit::In,
+            "%" => Unit::Percent,
             _ => return Err(MetadataError::new(&format!("Unknown unit: {}", s))),
         };
         Ok(unit)
@@ -85,13 +88,13 @@ fn parse_dimension(s: &str) -> Result<(f64, Unit), MetadataError> {
         .captures(s)
         .ok_or(MetadataError::new("Cannot read dimensions"))?;
 
-    let width: &str = caps
+    let val: &str = caps
         .get(1)
         .ok_or(MetadataError::new("No width specified"))?
         .as_str();
     let unit = caps.get(2).map_or("em", |m| m.as_str());
 
-    Ok((width.parse::<f64>()?, Unit::try_from(unit)?))
+    Ok((val.parse::<f64>()?, Unit::try_from(unit)?))
 }
 
 impl TryFrom<&str> for Width {
@@ -185,13 +188,37 @@ impl Metadata {
     }
 
     /// Returns the value of the `width` attribute.
-    pub fn width(&self) -> Option<Width> {
-        self.width
+    /// If the width is set to 100% then this refers to
+    /// the width of the viewbox.
+    pub fn width(&self) -> Option<f64> {
+        if let Some(w) = self.width {
+            if w.unit == Unit::Percent {
+                if let Some(v) = self.view_box {
+                    return Some(w.width / 100.0 * (v.width as f64));
+                }
+            }
+        }
+        match self.width {
+            Some(w) => Some(w.width),
+            None => None,
+        }
     }
 
     /// Returns the value of the `height` attribute.
-    pub fn height(&self) -> Option<Height> {
-        self.height
+    /// If the height is set to 100% then this refers to
+    /// the height of the viewbox.
+    pub fn height(&self) -> Option<f64> {
+        if let Some(h) = self.height {
+            if h.unit == Unit::Percent {
+                if let Some(v) = self.view_box {
+                    return Some(h.height / 100.0 * (v.height as f64));
+                }
+            }
+        }
+        match self.height {
+            Some(h) => Some(h.height),
+            None => None,
+        }
     }
 }
 
@@ -301,6 +328,23 @@ mod tests {
         for (input, expected) in tests {
             assert_eq!(Height::try_from(input).unwrap(), expected);
         }
+    }
+
+    #[test]
+    fn test_width_height_percent() {
+        let svg = r#"<svg viewBox="0 1 99 100" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="100%" height="100%"/>
+</svg>"#;
+
+        let meta = Metadata::parse(svg).unwrap();
+        assert_eq!(meta.width(), Some(99.0));
+        assert_eq!(meta.height(), Some(100.0));
+
+        let svg = r#"<svg viewBox="0 1 80 200" width="50%" height="20%" xmlns="http://www.w3.org/2000/svg"></svg>"#;
+
+        let meta = Metadata::parse(svg).unwrap();
+        assert_eq!(meta.width(), Some(40.0));
+        assert_eq!(meta.height(), Some(40.0));
     }
 
     #[test]

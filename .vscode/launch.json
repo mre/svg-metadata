@@ -1,0 +1,65 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'svg_metadata'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=svg_metadata"
+                ],
+                "filter": {
+                    "name": "svg_metadata",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'fixtures'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=fixtures",
+                    "--package=svg_metadata"
+                ],
+                "filter": {
+                    "name": "fixtures",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'skeptic'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=skeptic",
+                    "--package=svg_metadata"
+                ],
+                "filter": {
+                    "name": "skeptic",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
