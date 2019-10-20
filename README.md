@@ -1,6 +1,6 @@
 # svg-metadata
 
-![Github Actions](https://action-badges.now.sh/mre/svg-metadata?action=test)
+![Github Actions](https://github.com/mre/svg-metadata/workflows/Rust/badge.svg)
 [![Documentation](https://docs.rs/svg_metadata/badge.svg)](https://docs.rs/svg_metadata/)
 
 ## What is it?
