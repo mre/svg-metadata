@@ -39,7 +39,7 @@ impl From<ParseFloatError> for MetadataError {
 
 impl From<IoError> for MetadataError {
     fn from(e: IoError) -> MetadataError {
-        MetadataError::new(e.description())
+        MetadataError::new(&e.to_string())
     }
 }
 

@@ -8,6 +8,9 @@
 #[macro_use]
 extern crate lazy_static;
 
+#[macro_use]
+extern crate doc_comment;
+
 use regex::Regex;
 use roxmltree::Document;
 use std::convert::{AsRef, TryFrom};
@@ -380,3 +383,6 @@ mod tests {
         )
     }
 }
+
+#[cfg(doctest)]
+doctest!("../README.md");
