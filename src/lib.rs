@@ -8,9 +8,6 @@
 #[macro_use]
 extern crate lazy_static;
 
-#[macro_use]
-extern crate doc_comment;
-
 use regex::Regex;
 use roxmltree::Document;
 use std::convert::{AsRef, TryFrom};
@@ -223,6 +220,11 @@ impl Metadata {
             None => None,
         }
     }
+
+    /// Return view_box
+    pub fn view_box(&self) -> Option<ViewBox> {
+        self.view_box
+    }
 }
 
 #[cfg(test)]
@@ -367,6 +369,17 @@ mod tests {
                 height: 100.0
             })
         );
+
+        assert_eq!(
+            meta.view_box(),
+            Some(ViewBox {
+                min_x: 0.0,
+                min_y: 1.0,
+                width: 99.0,
+                height: 100.0
+            })
+        );
+
         assert_eq!(
             meta.width,
             Some(Width {
@@ -383,6 +396,10 @@ mod tests {
         )
     }
 }
+
+#[cfg(doctest)]
+#[macro_use]
+extern crate doc_comment;
 
 #[cfg(doctest)]
 doctest!("../README.md");
