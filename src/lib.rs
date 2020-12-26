@@ -45,7 +45,7 @@ pub enum Unit {
     Px,
     /// Points (1 / 72 of an inch)
     Pt,
-    ///	Picas (1 / 6 of an inch)
+    /// Picas (1 / 6 of an inch)
     Pc,
     /// Centimeters
     Cm,
