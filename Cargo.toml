@@ -1,6 +1,6 @@
 [package]
 name = "svg_metadata"
-version = "0.4.1"
+version = "0.4.2"
 authors = ["Matthias Endler <matthias-endler@gmx.net>"]
 edition = "2018"
 description = "Extracts metadata (like the viewBox, width, and height) from SVG graphics"
