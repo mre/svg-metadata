@@ -86,7 +86,7 @@ pub struct Width {
 fn parse_dimension(s: &str) -> Result<(f64, Unit), MetadataError> {
     let caps = DIMENSION
         .captures(s)
-        .ok_or_else(|| MetadataError::new("Cannot read dimensions"));
+        .ok_or_else(|| MetadataError::new("Cannot read dimensions"))?;
 
     let val: &str = caps
         .get(1)
