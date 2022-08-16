@@ -34,7 +34,7 @@ pub struct ViewBox {
     pub height: f64,
 }
 
-#[derive(Debug, PartialEq, Copy, Clone)]
+#[derive(Debug, PartialEq, Eq, Copy, Clone)]
 /// Supported units for dimensions
 pub enum Unit {
     /// The default font size - usually the height of a character.
@@ -198,10 +198,7 @@ impl Metadata {
                 }
             }
         }
-        match self.width {
-            Some(w) => Some(w.width),
-            None => None,
-        }
+        self.width.map(|w| w.width)
     }
 
     /// Returns the value of the `height` attribute.
@@ -215,10 +212,7 @@ impl Metadata {
                 }
             }
         }
-        match self.height {
-            Some(h) => Some(h.height),
-            None => None,
-        }
+        self.height.map(|h| h.height)
     }
 
     /// Return view_box
