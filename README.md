@@ -8,9 +8,9 @@
 This crate extracts metadata from SVG files.
 Currently it reads the following attributes:
 
-* `viewBox`
-* `width`
-* `height`
+- `viewBox`
+- `width`
+- `height`
 
 You can add more!
 
@@ -20,9 +20,11 @@ You can add more!
 use svg_metadata::{Metadata, ViewBox};
 
 fn main() {
-    let svg = r#"<svg viewBox="0 1 99 100" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="0" width="100%" height="100%"/>
-    </svg>"#;
+    let svg = r#"
+        <svg viewBox="0 1 99 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%"/>
+        </svg>
+    "#;
 
     let meta = Metadata::parse(svg).unwrap();
     assert_eq!(
@@ -43,8 +45,8 @@ fn main() {
 
 The SVG fixtures used for testing are provided by
 
-* [Openclipart](https://en.wikipedia.org/wiki/Openclipart)
-* [SVG Specification Examples](https://www.w3.org/TR/SVG2/)
-* [W3C SVG Working Group](https://www.w3.org/Graphics/SVG/)
+- [Openclipart](https://en.wikipedia.org/wiki/Openclipart)
+- [SVG Specification Examples](https://www.w3.org/TR/SVG2/)
+- [W3C SVG Working Group](https://www.w3.org/Graphics/SVG/)
 
 under their respective licenses.
