@@ -16,7 +16,7 @@ categories = [
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-roxmltree = "0.16.0"
+roxmltree = "0.17.0"
 regex = "1.6.0"
 lazy_static = "1.4.0"
 doc-comment = "0.3.3"
