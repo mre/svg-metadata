@@ -194,7 +194,7 @@ impl Metadata {
         if let Some(w) = self.width {
             if w.unit == Unit::Percent {
                 if let Some(v) = self.view_box {
-                    return Some(w.width / 100.0 * (v.width as f64));
+                    return Some(w.width / 100.0 * v.width);
                 }
             }
         }
@@ -208,7 +208,7 @@ impl Metadata {
         if let Some(h) = self.height {
             if h.unit == Unit::Percent {
                 if let Some(v) = self.view_box {
-                    return Some(h.height / 100.0 * (v.height as f64));
+                    return Some(h.height / 100.0 * v.height);
                 }
             }
         }
