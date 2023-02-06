@@ -70,7 +70,7 @@ impl TryFrom<&str> for Unit {
             "mm" => Unit::Mm,
             "in" => Unit::In,
             "%" => Unit::Percent,
-            _ => return Err(MetadataError::new(&format!("Unknown unit: {}", s))),
+            _ => return Err(MetadataError::new(&format!("Unknown unit: {s}"))),
         };
         Ok(unit)
     }

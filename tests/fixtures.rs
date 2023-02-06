@@ -13,6 +13,6 @@ fn test_fixtures() {
         println!("Parsing {}", path.display());
 
         let meta = Metadata::parse_file(path).unwrap();
-        println!("Metadata: {:?}", meta);
+        println!("Metadata: {meta:?}");
     }
 }

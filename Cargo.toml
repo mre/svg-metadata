@@ -16,13 +16,13 @@ categories = [
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-roxmltree = "0.17.0"
-regex = "1.6.0"
+roxmltree = "0.18.0"
+regex = "1.7.1"
 lazy_static = "1.4.0"
 doc-comment = "0.3.3"
 
 [build-dependencies]
-skeptic = "0.13"
+skeptic = "0.13.7"
 
 [dev-dependencies]
-skeptic = "0.13"
+skeptic = "0.13.7"
