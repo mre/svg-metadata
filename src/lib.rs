@@ -39,9 +39,13 @@ static DIMENSION: Lazy<Regex> = Lazy::new(|| Regex::new(r"([\+|-]?\d+\.?\d*)(\D\
 #[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the dimensions of an SVG image.
 pub struct ViewBox {
+    /// The x coordinate of the left edge of the viewBox
     pub min_x: f64,
+    /// The y coordinate of the top edge of the viewBox
     pub min_y: f64,
+    /// The width of the viewBox
     pub width: f64,
+    /// The height of the viewBox
     pub height: f64,
 }
 
@@ -90,7 +94,9 @@ impl TryFrom<&str> for Unit {
 #[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the width of an SVG image.
 pub struct Width {
+    /// The width of the image
     pub width: f64,
+    /// The unit of the width
     pub unit: Unit,
 }
 
@@ -119,7 +125,9 @@ impl TryFrom<&str> for Width {
 #[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the height of an SVG image.
 pub struct Height {
+    /// The height of the image
     pub height: f64,
+    /// The unit of the height
     pub unit: Unit,
 }
 
@@ -160,19 +168,84 @@ impl TryFrom<&str> for ViewBox {
 /// Contains all metadata that was
 /// extracted from an SVG image.
 pub struct Metadata {
+    /// The viewBox of the SVG image
+    /// A viewBox is a rectangle that defines the dimensions of the image.
+    /// For more information see: <https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/viewBox>
     pub view_box: Option<ViewBox>,
+    /// The width of the SVG image
     pub width: Option<Width>,
+    /// The height of the SVG image
     pub height: Option<Height>,
 }
 
 impl Metadata {
     /// Parse an SVG file and extract metadata from it.
+    ///
+    /// # Example
+    ///
+    /// ```rust
+    /// use svg_metadata::{Metadata, ViewBox};
+    ///
+    /// let meta = Metadata::parse_file("fixtures/test.svg").unwrap();
+    ///     assert_eq!(
+    ///     meta.view_box,
+    ///     Some(ViewBox {
+    ///         min_x: 0.0,
+    ///         min_y: 0.0,
+    ///         width: 96.0,
+    ///         height: 105.0
+    ///     })
+    /// );
+    /// ```
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if the file cannot be read or if the SVG data is invalid.
     pub fn parse_file<T: Into<PathBuf>>(path: T) -> Result<Metadata, MetadataError> {
         let input = fs::read_to_string(path.into())?;
         Self::parse(input)
     }
 
     /// Parse SVG data and extract metadata from it.
+    ///
+    /// # Example
+    ///
+    /// ```rust
+    /// use svg_metadata::{Metadata, ViewBox, Width, Height, Unit};
+    ///
+    /// let svg = r#"<svg viewBox="0 1 99 100" width="2em" height="10cm" xmlns="http://www.w3.org/2000/svg">
+    ///  <rect x="0" y="0" width="100%" height="100%"/>
+    /// </svg>"#;
+    ///
+    /// let meta = Metadata::parse(svg).unwrap();
+    /// assert_eq!(
+    ///    meta.view_box,
+    ///    Some(ViewBox {
+    ///      min_x: 0.0,
+    ///      min_y: 1.0,
+    ///      width: 99.0,
+    ///      height: 100.0
+    ///    })
+    /// );
+    /// assert_eq!(
+    ///   meta.width,
+    ///   Some(Width {
+    ///     width: 2.0,
+    ///     unit: Unit::Em
+    ///   })
+    /// );
+    /// assert_eq!(
+    ///  meta.height,
+    ///  Some(Height {
+    ///    height: 10.0,
+    ///    unit: Unit::Cm
+    ///   })
+    /// );
+    /// ```
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if the SVG data is invalid.
     pub fn parse<T: AsRef<str>>(input: T) -> Result<Metadata, MetadataError> {
         let doc = Document::parse(input.as_ref())?;
         let svg_elem = doc.root_element();
@@ -201,6 +274,7 @@ impl Metadata {
     /// Returns the value of the `width` attribute.
     /// If the width is set to 100% then this refers to
     /// the width of the viewbox.
+    #[must_use]
     pub fn width(&self) -> Option<f64> {
         if let Some(w) = self.width {
             if w.unit == Unit::Percent {
@@ -215,6 +289,7 @@ impl Metadata {
     /// Returns the value of the `height` attribute.
     /// If the height is set to 100% then this refers to
     /// the height of the viewbox.
+    #[must_use]
     pub fn height(&self) -> Option<f64> {
         if let Some(h) = self.height {
             if h.unit == Unit::Percent {
@@ -226,8 +301,9 @@ impl Metadata {
         self.height.map(|h| h.height)
     }
 
-    /// Return view_box
-    pub fn view_box(&self) -> Option<ViewBox> {
+    /// Return `view_box`
+    #[must_use]
+    pub const fn view_box(&self) -> Option<ViewBox> {
         self.view_box
     }
 }
@@ -249,7 +325,7 @@ mod tests {
                     width: 99.0,
                     height: 100.0
                 }
-            )
+            );
         }
     }
 
@@ -263,7 +339,7 @@ mod tests {
                 width: -99.00001,
                 height: -100.3
             }
-        )
+        );
     }
 
     #[test]
@@ -398,7 +474,7 @@ mod tests {
                 height: 10.0,
                 unit: Unit::Cm
             })
-        )
+        );
     }
 }
 
