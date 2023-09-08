@@ -1,6 +1,5 @@
 # svg-metadata
 
-![Github Actions](https://github.com/mre/svg-metadata/workflows/Rust/badge.svg)
 [![CI](https://github.com/mre/svg-metadata/actions/workflows/rust.yml/badge.svg)](https://github.com/mre/svg-metadata/actions/workflows/rust.yml)
 [![Documentation](https://docs.rs/svg_metadata/badge.svg)](https://docs.rs/svg_metadata/)
 
