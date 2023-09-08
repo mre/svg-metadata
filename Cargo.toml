@@ -1,25 +1,21 @@
 [package]
 name = "svg_metadata"
-version = "0.4.4"
+version = "0.5.0"
 authors = ["Matthias Endler <matthias-endler@gmx.net>"]
 edition = "2021"
 description = "Extracts metadata (like the viewBox, width, and height) from SVG graphics"
 license = "Apache-2.0/MIT"
-keywords = ["svg", "graphics", "image", "metadata" ]
+keywords = ["svg", "graphics", "image", "metadata"]
 homepage = "https://github.com/mre/svg-metadata"
-categories = [
-    "graphics", 
-    "multimedia", 
-    "parsing"
-]
+categories = ["graphics", "multimedia", "parsing"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 roxmltree = "0.18.0"
 regex = "1.9.5"
-lazy_static = "1.4.0"
 doc-comment = "0.3.3"
+once_cell = "1.18.0"
 
 [build-dependencies]
 skeptic = "0.13.7"

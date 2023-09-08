@@ -23,16 +23,18 @@ use std::convert::{AsRef, TryFrom};
 use std::fs;
 use std::path::PathBuf;
 
+use once_cell::sync::Lazy;
+use regex::Regex;
+use roxmltree::Document;
+
 mod error;
-use crate::error::MetadataError;
+use crate::error::Metadata as MetadataError;
 
-lazy_static! {
-    // Initialize the regex to split a list of elements in the viewBox
-    static ref VBOX_ELEMENTS: Regex = Regex::new(r",?\s+").unwrap();
+/// Regex to split a list of elements in the viewBox
+static VBOX_ELEMENTS: Lazy<Regex> = Lazy::new(|| Regex::new(r",?\s+").unwrap());
 
-    // Extract dimension information (e.g. 100em)
-    static ref DIMENSION: Regex = Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap();
-}
+/// Regex to extract dimension information (e.g. 100em)
+static DIMENSION: Lazy<Regex> = Lazy::new(|| Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap());
 
 #[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the dimensions of an SVG image.
