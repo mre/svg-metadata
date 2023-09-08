@@ -39,7 +39,7 @@ fn main() {
 }
 ```
 
-(You can also parse files directly with `parse_file()`.)
+(You can also parse files directly with [`parse_file()`](https://docs.rs/svg_metadata/latest/svg_metadata/struct.Metadata.html#method.parse_file).)
 
 ## Credits
 
