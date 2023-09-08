@@ -4,12 +4,21 @@
 //!
 //! As such, it has a very narrow scope and only provides access to the fields
 //! defined below.
+#![warn(clippy::all, clippy::pedantic)]
+#![warn(
+    absolute_paths_not_starting_with_crate,
+    rustdoc::invalid_html_tags,
+    missing_copy_implementations,
+    missing_debug_implementations,
+    semicolon_in_expressions_from_macros,
+    unreachable_pub,
+    unused_extern_crates,
+    variant_size_differences,
+    clippy::missing_const_for_fn
+)]
+#![deny(anonymous_parameters, macro_use_extern_crate, pointer_structural_match)]
+#![deny(missing_docs)]
 
-#[macro_use]
-extern crate lazy_static;
-
-use regex::Regex;
-use roxmltree::Document;
 use std::convert::{AsRef, TryFrom};
 use std::fs;
 use std::path::PathBuf;
