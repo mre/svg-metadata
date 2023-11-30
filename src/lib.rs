@@ -25,7 +25,6 @@ use std::path::PathBuf;
 
 use once_cell::sync::Lazy;
 use regex::Regex;
-use roxmltree::Document;
 
 mod error;
 use crate::error::Metadata as MetadataError;
@@ -247,7 +246,17 @@ impl Metadata {
     ///
     /// Returns an error if the SVG data is invalid.
     pub fn parse<T: AsRef<str>>(input: T) -> Result<Metadata, MetadataError> {
-        let doc = Document::parse(input.as_ref())?;
+        let doc = roxmltree::Document::parse_with_options(
+            input.as_ref(),
+            roxmltree::ParsingOptions {
+                // Allow DTDs (e.g. `<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"`)
+                // See [`roxmltree` docs](https://docs.rs/roxmltree/latest/roxmltree/struct.ParsingOptions.html#structfield.allow_dtd)
+                // for more info
+                allow_dtd: true,
+                ..Default::default()
+            },
+        )?;
+
         let svg_elem = doc.root_element();
         let view_box = match svg_elem.attribute("viewBox") {
             Some(val) => ViewBox::try_from(val).ok(),
