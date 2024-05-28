@@ -19,6 +19,9 @@
 #![deny(anonymous_parameters, macro_use_extern_crate, pointer_structural_match)]
 #![deny(missing_docs)]
 
+#[cfg(doctest)]
+doctest!("../README.md");
+
 use std::convert::{AsRef, TryFrom};
 use std::fs;
 use std::path::PathBuf;
