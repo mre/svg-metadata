@@ -6,7 +6,7 @@ edition = "2021"
 description = "Extracts metadata (like the viewBox, width, and height) from SVG graphics"
 license = "Apache-2.0/MIT"
 keywords = ["svg", "graphics", "image", "metadata"]
-homepage = "https://github.com/mre/svg-metadata"
+repository = "https://github.com/mre/svg-metadata"
 categories = ["graphics", "multimedia", "parsing"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
