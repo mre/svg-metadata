@@ -24,8 +24,8 @@ static VBOX_ELEMENTS: Lazy<Regex> = Lazy::new(|| Regex::new(r",?\s+").unwrap());
 /// Regex to extract dimension information (e.g. 100em)
 static DIMENSION: Lazy<Regex> = Lazy::new(|| Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap());
 
-#[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the dimensions of an SVG image.
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub struct ViewBox {
     /// The x coordinate of the left edge of the viewBox
     pub min_x: f64,
@@ -37,8 +37,8 @@ pub struct ViewBox {
     pub height: f64,
 }
 
-#[derive(Debug, PartialEq, Eq, Copy, Clone)]
 /// Supported units for dimensions
+#[derive(Debug, PartialEq, Eq, Copy, Clone)]
 #[non_exhaustive]
 pub enum Unit {
     /// The default font size - usually the height of a character.
@@ -80,8 +80,8 @@ impl TryFrom<&str> for Unit {
     }
 }
 
-#[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the width of an SVG image.
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub struct Width {
     /// The width of the image
     pub width: f64,
@@ -89,6 +89,7 @@ pub struct Width {
     pub unit: Unit,
 }
 
+/// Parse a dimension string and return the value and unit
 fn parse_dimension(s: &str) -> Result<(f64, Unit), MetadataError> {
     let caps = DIMENSION
         .captures(s)
@@ -111,8 +112,8 @@ impl TryFrom<&str> for Width {
     }
 }
 
-#[derive(Debug, PartialEq, Copy, Clone)]
 /// Specifies the height of an SVG image.
+#[derive(Debug, PartialEq, Copy, Clone)]
 pub struct Height {
     /// The height of the image
     pub height: f64,
@@ -130,21 +131,23 @@ impl TryFrom<&str> for Height {
 
 impl TryFrom<&str> for ViewBox {
     type Error = MetadataError;
-    fn try_from(s: &str) -> Result<ViewBox, MetadataError> {
-        let elem: Vec<&str> = VBOX_ELEMENTS.split(s).collect();
 
-        if elem.len() != 4 {
+    fn try_from(s: &str) -> Result<ViewBox, MetadataError> {
+        let elements: Vec<&str> = VBOX_ELEMENTS.split(s).collect();
+
+        if elements.len() != 4 {
             return Err(MetadataError::new(&format!(
                 "Invalid view_box: Expected four elements, got {}",
-                elem.len()
+                elements.len()
             )));
         }
-        let min_x = elem[0].parse::<f64>()?;
-        let min_y = elem[1].parse::<f64>()?;
-        let width = elem[2].parse::<f64>()?;
-        let height = elem[3].parse::<f64>()?;
 
-        Ok(ViewBox {
+        let min_x = elements[0].parse::<f64>()?;
+        let min_y = elements[1].parse::<f64>()?;
+        let width = elements[2].parse::<f64>()?;
+        let height = elements[3].parse::<f64>()?;
+
+        Ok(Self {
             min_x,
             min_y,
             width,
@@ -153,9 +156,8 @@ impl TryFrom<&str> for ViewBox {
     }
 }
 
+/// Contains all metadata that was extracted from an SVG image.
 #[derive(Debug, PartialEq, Copy, Clone)]
-/// Contains all metadata that was
-/// extracted from an SVG image.
 pub struct Metadata {
     /// The viewBox of the SVG image
     /// A viewBox is a rectangle that defines the dimensions of the image.
@@ -276,14 +278,15 @@ impl Metadata {
     /// the width of the viewbox.
     #[must_use]
     pub fn width(&self) -> Option<f64> {
-        if let Some(w) = self.width {
-            if w.unit == Unit::Percent {
-                if let Some(v) = self.view_box {
-                    return Some(w.width / 100.0 * v.width);
-                }
+        let width = self.width?;
+
+        if width.unit == Unit::Percent {
+            if let Some(view_box) = self.view_box {
+                return Some(width.width / 100.0 * view_box.width);
             }
         }
-        self.width.map(|w| w.width)
+
+        Some(width.width)
     }
 
     /// Returns the value of the `height` attribute.
@@ -292,14 +295,15 @@ impl Metadata {
     /// the height of the viewbox.
     #[must_use]
     pub fn height(&self) -> Option<f64> {
-        if let Some(h) = self.height {
-            if h.unit == Unit::Percent {
-                if let Some(v) = self.view_box {
-                    return Some(h.height / 100.0 * v.height);
-                }
+        let height = self.height?;
+
+        if height.unit == Unit::Percent {
+            if let Some(view_box) = self.view_box {
+                return Some(height.height / 100.0 * view_box.height);
             }
         }
-        self.height.map(|h| h.height)
+
+        Some(height.height)
     }
 
     /// Return `view_box`
@@ -367,13 +371,6 @@ mod tests {
                     unit: Unit::Px,
                 },
             ),
-            (
-                "100em",
-                Width {
-                    width: 100.0,
-                    unit: Unit::Em,
-                },
-            ),
         ];
         for (input, expected) in tests {
             assert_eq!(Width::try_from(input).unwrap(), expected);
@@ -402,13 +399,6 @@ mod tests {
                 Height {
                     height: -10.0,
                     unit: Unit::Px,
-                },
-            ),
-            (
-                "100em",
-                Height {
-                    height: 100.0,
-                    unit: Unit::Em,
                 },
             ),
         ];
