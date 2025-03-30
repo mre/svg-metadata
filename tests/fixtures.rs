@@ -1,5 +1,7 @@
-// extern crate we're testing, same as any other code would do.
-extern crate svg_metadata;
+//! This crate contains smoke tests for the `svg_metadata` crate.
+//!
+//! We parse a set of (W3C) SVG fixtures and check that the metadata can be
+//! parsed.
 
 use std::fs;
 use svg_metadata::Metadata;
