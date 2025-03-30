@@ -21,7 +21,6 @@ once_cell = "1.21.3"
 doc-comment = "0.3.3"
 
 [lints.rust]
-invalid_html_tags = "warn"
 absolute_paths_not_starting_with_crate = "warn"
 missing_copy_implementations = "warn"
 missing_debug_implementations = "warn"
@@ -37,3 +36,6 @@ missing_docs = "deny"
 all = "warn"
 pedantic = "warn"
 missing_const_for_fn = "warn"
+
+[lints.rustdoc]
+invalid_html_tags = "warn"
