@@ -39,6 +39,7 @@ pub struct ViewBox {
 
 #[derive(Debug, PartialEq, Eq, Copy, Clone)]
 /// Supported units for dimensions
+#[non_exhaustive]
 pub enum Unit {
     /// The default font size - usually the height of a character.
     Em,
