@@ -14,7 +14,7 @@ Currently it reads the following attributes:
 
 You can add more!
 
-## Usage Example
+## Usage Examples
 
 ```rust
 use svg_metadata::{Metadata, ViewBox};
@@ -34,6 +34,38 @@ fn main() {
             min_y: 1.0,
             width: 99.0,
             height: 100.0
+        })
+    );
+}
+```
+
+Width and height elements contain the units (if available):
+
+```rust
+use svg_metadata::{Metadata, Height, Width, Unit};
+
+fn main() {
+    let svg = r#"
+        <svg width="100cm" height="50cm" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="100%" height="100%"/>
+        </svg>
+    "#;
+
+    let meta = Metadata::parse(svg).unwrap();
+
+    assert_eq!(
+        meta.width,
+        Some(Width {
+            width: 100.0,
+            unit: Unit::Cm
+        })
+    );
+
+    assert_eq!(
+        meta.height,
+        Some(Height {
+            height: 50.0,
+            unit: Unit::Cm
         })
     );
 }
