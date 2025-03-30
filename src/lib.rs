@@ -284,6 +284,7 @@ impl Metadata {
     }
 
     /// Returns the value of the `width` attribute.
+    ///
     /// If the width is set to 100% then this refers to
     /// the width of the viewbox.
     #[must_use]
@@ -299,6 +300,7 @@ impl Metadata {
     }
 
     /// Returns the value of the `height` attribute.
+    ///
     /// If the height is set to 100% then this refers to
     /// the height of the viewbox.
     #[must_use]
@@ -446,8 +448,7 @@ mod tests {
     }
 
     #[test]
-    fn test_metadata() {
-        // separated by whitespace and/or a comma
+    fn test_metadata_unit() {
         let svg = r#"<svg viewBox="0 1 99 100" width="2em" height="10cm" xmlns="http://www.w3.org/2000/svg">
   <rect x="0" y="0" width="100%" height="100%"/>
 </svg>"#;
