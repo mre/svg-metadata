@@ -1,9 +1,30 @@
-//! `svg_metadata` is a Rust crate for parsing metadata information of SVG files.  
-//! In can be useful for getting information from SVG graphics without using
-//! a full-blown parser.  
+//! `svg_metadata` is a Rust crate for parsing metadata information of SVG files.
 //!
-//! As such, it has a very narrow scope and only provides access to the fields
-//! defined below.
+//! In can be useful for getting information from SVG graphics without using a
+//! full-blown parser. As such, it has a very narrow scope and only provides
+//! access to the fields defined below.
+//!
+//! ## Usage Example
+//! ```rust
+//! use svg_metadata::{Metadata, ViewBox};
+//!
+//! let svg = r#"
+//!     <svg viewBox="0 1 99 100" xmlns="http://www.w3.org/2000/svg">
+//!         <rect x="0" y="0" width="100%" height="100%"/>
+//!     </svg>
+//! "#;
+//!
+//! let meta = Metadata::parse(svg).unwrap();
+//! assert_eq!(
+//!     meta.view_box,
+//!     Some(ViewBox {
+//!         min_x: 0.0,
+//!         min_y: 1.0,
+//!         width: 99.0,
+//!         height: 100.0
+//!     })
+//! );
+// ```
 
 #[cfg(doctest)]
 doctest!("../README.md");
@@ -11,18 +32,21 @@ doctest!("../README.md");
 use std::convert::{AsRef, TryFrom};
 use std::fs;
 use std::path::PathBuf;
+use std::sync::LazyLock;
 
-use once_cell::sync::Lazy;
 use regex::Regex;
 
+/// Error handling module for SVG metadata parsing.
 mod error;
+
 use crate::error::Metadata as MetadataError;
 
 /// Regex to split a list of elements in the viewBox
-static VBOX_ELEMENTS: Lazy<Regex> = Lazy::new(|| Regex::new(r",?\s+").unwrap());
+static VBOX_ELEMENTS: LazyLock<Regex> = LazyLock::new(|| Regex::new(r",?\s+").unwrap());
 
 /// Regex to extract dimension information (e.g. 100em)
-static DIMENSION: Lazy<Regex> = Lazy::new(|| Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap());
+static DIMENSION: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"([\+|-]?\d+\.?\d*)(\D\D?)?").unwrap());
 
 /// Specifies the dimensions of an SVG image.
 #[derive(Debug, PartialEq, Copy, Clone)]
@@ -280,10 +304,10 @@ impl Metadata {
     pub fn width(&self) -> Option<f64> {
         let width = self.width?;
 
-        if width.unit == Unit::Percent {
-            if let Some(view_box) = self.view_box {
-                return Some(width.width / 100.0 * view_box.width);
-            }
+        if width.unit == Unit::Percent
+            && let Some(view_box) = self.view_box
+        {
+            return Some(width.width / 100.0 * view_box.width);
         }
 
         Some(width.width)
@@ -297,10 +321,10 @@ impl Metadata {
     pub fn height(&self) -> Option<f64> {
         let height = self.height?;
 
-        if height.unit == Unit::Percent {
-            if let Some(view_box) = self.view_box {
-                return Some(height.height / 100.0 * view_box.height);
-            }
+        if height.unit == Unit::Percent
+            && let Some(view_box) = self.view_box
+        {
+            return Some(height.height / 100.0 * view_box.height);
         }
 
         Some(height.height)
