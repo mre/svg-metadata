@@ -25,11 +25,7 @@ impl fmt::Display for Metadata {
     }
 }
 
-impl Error for Metadata {
-    fn description(&self) -> &str {
-        &self.details
-    }
-}
+impl Error for Metadata {}
 
 impl From<ParseFloatError> for Metadata {
     fn from(_: ParseFloatError) -> Metadata {
